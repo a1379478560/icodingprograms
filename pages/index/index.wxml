@@ -37,5 +37,22 @@
       <text class='navitxt'> 我要分享</text>
     </view>
   </view>
+  
+  <!--图文标题栏（环境及教学）-->
+  <view class='tuwenbiaoti'>
+    <image class='tuwenicon' src='./icon/shouzhi.png' />
+    <text class='tuwentxt'> 环境及教学</text>
+  </view>
+  
+  <image class='full_image' src='pic/huanjing1.jpg' mode="aspectFill" />
+  <image class='full_image' src='pic/huanjing2.jpg' mode="aspectFill" />
+  <image class='full_image' src='pic/huanjing3.jpg' mode="aspectFill" />
+
+  <video class='show_video' src="pic/1.mp4"  />
+
+  <view class='tuwenbiaoti'>
+    <image class='tuwenicon' src='./icon/shouzhi.png' />
+    <text class='tuwentxt'> 课程介绍</text>
+  </view>
 
 </view>

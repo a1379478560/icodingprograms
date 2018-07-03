@@ -9,13 +9,11 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     pics: [
-      { url: '2.png' },
-      { url: '1.png' },
-
-      // { url: '../3.jpg' },
-      // { url: '../4.jpg' },
-      // { url: '../5.jpg' },
-      // { url: '../6.jpg' },
+      { url: 'pic/shoutu1.jpg' },
+      { url: 'pic/shoutu2.jpg' },
+      { url: 'pic/shoutu3.jpg' },
+      { url: 'pic/shoutu4.jpg' },
+      { url: 'pic/shoutu5.jpg' },
     ]
   },
   //事件处理函数
