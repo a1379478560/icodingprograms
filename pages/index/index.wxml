@@ -84,5 +84,30 @@
     <image class='tuwenicon' src='./icon/shouzhi.png' />
     <text class='tuwentxt'> 教师介绍</text>
   </view>
+
+<scroll-view scroll-x="true" style=" white-space: nowrap; display: flex; " >
+  <view class='jiaoshijianjie' >
+    <image class="jiaoshijianjieimg"  src='./师资/石老师.jpg' />
+    <text class="jiaoshijianjietxt">石老师</text>
+  </view>
+  <view class='jiaoshijianjie' >
+    <image class="jiaoshijianjieimg"  src='./师资/石老师.jpg' />
+    <text class="jiaoshijianjietxt">石老师</text>
+  </view>
+  <view class='jiaoshijianjie' >
+    <image class="jiaoshijianjieimg" src='./师资/石老师.jpg' />
+    <text class="jiaoshijianjietxt">石老师</text>
+  </view>
+  <view class='jiaoshijianjie' >
+    <image class="jiaoshijianjieimg" src='./师资/石老师.jpg' />
+    <text class="jiaoshijianjietxt">石老师</text>
+  </view>
+  <view class='jiaoshijianjie' >
+    <image class="jiaoshijianjieimg" src='./师资/石老师.jpg' />
+    <text class="jiaoshijianjietxt">石老师</text>
+  </view>
+</scroll-view>
+
+
 </view>
                                                                                                                                                                                                                                                                                                                                                                             

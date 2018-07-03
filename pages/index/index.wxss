@@ -152,3 +152,42 @@
     background-color: white; 
     align-items: stretch;
 }
+
+.jiaoshijieshao {
+    margin-top: 20rpx;
+    height: 500rpx;
+    width: 90%;
+    background: #FFF;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-left: 10rpx;
+    border-right: 10rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 300ms ease;
+}
+.jiaoshijianjie {
+    margin-top: 10rpx;
+    height: 400rpx;
+    width: 250rpx;
+    background: #FFF;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-left: 10rpx;
+    border-right: 10rpx;
+    flex-direction: column;
+    align-items: center;
+    display: inline-block;
+    text-align: center;
+    
+}
+.jiaoshijianjieimg {
+  height: 300rpx;
+  width: 90%;
+  display: block;
+}
+.jiaoshijianjietxt {
+  font-size: 42rpx;
+  height: 100rpx;
+  width: 60%;
+  
+}
