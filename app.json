@@ -1,0 +1,34 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"black",
+    "navigationBarBackgroundColor": "#333333",
+    "navigationBarTitleText": "icoding青少年编程",
+    "navigationBarTextStyle":"light"
+  },
+  "tabBar": {
+    "color":"#555555",
+    "selectedColor":"#ff6100",
+    "backgroundColor":"#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath":"pages/index/icon/shouyeimg.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text":"我的",
+        "iconPath": "pages/index/icon/myimg.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

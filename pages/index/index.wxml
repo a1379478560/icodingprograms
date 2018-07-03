@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<view class="container">
+ 
+    <!-- 轮播图   -->
+    <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">  
+      <block wx:for="{{pics}}" wx:for-index="index">  
+        <swiper-item> 
+          <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>  
+        </swiper-item>
+      </block>
+    </swiper> 
+  <!-- 联系电话 -->
+  <view class="phonecall"   bindtap="phoneCall">
+    <view class="phone_img"  >
+      <image class="phoneicon" background-size="cover" src="./icon/phone.png" />
+    </view> 
+    <view class="weui-cell__bd">
+      <text class="phonenum" >15732135100</text>
+    </view>
+  </view>
+  <!-- 导航 -->
+  <view class='navigator'>
+    <view class='navigateitem'>
+      <image class='navicon' src='./icon/kechengjieshaoimg.png' />
+      <text class='navitxt'> 课程介绍</text>
+    </view>
+    <view class='navigateitem'>
+      <image class='navicon' src='./icon/yuyueimg.png' />
+      <text class='navitxt'> 预约试听</text>
+    </view>
+    <view class='navigateitem'>
+      <image class='navicon' src='./icon/shipinimg.png' />
+      <text class='navitxt'> 在线视频</text>
+    </view>
+    <view class='navigateitem'>
+      <image class='navicon' src='./icon/fenxiangimg.png' />
+      <text class='navitxt'> 我要分享</text>
+    </view>
+  </view>
+
+</view>
