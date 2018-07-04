@@ -11,11 +11,14 @@
     </swiper> 
   <!-- 联系电话 -->
   <view class="phonecall"   bindtap="phoneCall">
+    <view class="weui-cell__bd">
+      <text decode="{{true}}" space="{{true}}" class="phonenum" >&nbsp;&nbsp;&nbsp;   </text>
+    </view>
     <view class="phone_img"  >
       <image class="phoneicon" background-size="cover" src="./icon/phone.png" />
     </view> 
     <view class="weui-cell__bd">
-      <text class="phonenum" >15732135100</text>
+      <text class="phonenum" >18132047093</text>
     </view>
   </view>
   <!-- 导航 -->
@@ -38,42 +41,85 @@
     </view>
   </view>
   
-  <!--图文标题栏（环境及教学）-->
+  <!--图文标题栏（课程落地学校）-->
   <view class='tuwenbiaoti'>
     <image class='tuwenicon' src='./icon/shouzhi.png' />
-    <text class='tuwentxt'> 环境及教学</text>
+    <text class='tuwentxt'> 课程落地学校</text>
   </view>
   
-  <image class='full_image' src='pic/huanjing1.jpg' mode="aspectFill" />
-  <image class='full_image' src='pic/huanjing2.jpg' mode="aspectFill" />
-  <image class='full_image' src='pic/huanjing3.jpg' mode="aspectFill" />
 
-  <video class='show_video' src="pic/1.mp4"  />
+  <view class='kechengluodi'>
+    <image class='full_image' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/桥西外国语小学.jpg" mode="aspectFill" />
+    <text class='kechengluoditxt'>桥西外国语小学</text>
+  </view>
+  <view class='kechengluodi'>
+    <image class='full_image' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/东风小学.jpg" mode="aspectFill" />
+    <text class='kechengluoditxt'>东风小学</text>
+  </view>
+  <view class='kechengluodi'>
+    <image class='full_image' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/东马路小学.jpg" mode="aspectFill" />
+    <text class='kechengluoditxt'>东马路小学</text>
+  </view>
+  <view class='kechengluodi'>
+    <image class='full_image' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/维明路小学.jpg" mode="aspectFill" />
+    <text class='kechengluoditxt'>维明路小学</text>
+  </view>
+  <view class='kechengluodi'>
+    <image class='full_image' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/精英博爱小学.jpg" mode="aspectFill" />
+    <text class='kechengluoditxt'>精英博爱小学</text>
+  </view>
+  <view class='kechengluodi'>
+    <image class='full_image' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/青园街小学.jpg" mode="aspectFill" />
+    <text class='kechengluoditxt'>青园街小学</text>
+  </view>
+  <view class='kechengluodi'>
+    <image class='full_image' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/高邑西北营中心小学.jpg" mode="aspectFill" />
+    <text class='kechengluoditxt'>高邑西北营中心小学</text>
+  </view>
+  <view class='kechengluodi'>
+    <image class='full_image' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/44中.jpg" mode="aspectFill" />
+    <text class='kechengluoditxt'>石家庄44中</text>
+  </view>
+  <view class='kechengluodi'>
+    <image class='full_image' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/河北地质大学.jpg" mode="aspectFill" />
+    <text class='kechengluoditxt'>河北地质大学</text>
+  </view>
 
+
+  <video class='show_video' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/1.mp4"  />
+
+
+  <!--图文标题栏（个性化小班教学）-->
+  <view class='tuwenbiaoti'>
+    <image class='tuwenicon' src='./icon/shouzhi.png' />
+    <text class='tuwentxt'> 个性化小班教学</text>
+  </view>
+  <image class='big_full_image' src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/小班教学1.jpg' mode="aspectFill" />
+  <image class='full_image' src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/小班教学2.jpg' mode="aspectFill" />
+  <!--图文标题栏（课程介绍）-->
   <view class='tuwenbiaoti'>
     <image class='tuwenicon' src='./icon/shouzhi.png' />
     <text class='tuwentxt'> 课程介绍</text>
   </view> 
-
   <view class='kechengjieshao'>
-    <image class='full_image' src="pic/kechengtixi.jpg" mode="aspectFill" />
+    <image class='big2_full_image' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/kechengtixi.jpg" mode="aspectFill" />
     <text class='kechengtxt'>系统的课程体系</text>
     <text class='kechengneirongtxt'>icoding研发的青少年编程课是以编程课程为驱动的完善的计算机科学课程体系。我们经历五年的教育教学实践，研发出从小学到大学完善的课程体系。该课程体系汲取了英国CAS系统课程、美国code.org计算机课科学程体系、可汗学院计算机科学课程体系，Google CS First计算思维课程内核，日本青少年计算机科学课程体系，台湾的课程体系，而后进行本土化实践、总结，不断与国内外专家教授以及一线教师沟通切磋，最后形成该课程体系。</text>
   </view>
 
   <view class='kechengjieshao_xiao'>
-    <image class='full_image' src="pic/Scratch.jpg" mode="aspectFill" />
+    <image class='full_image' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/scratch.jpg" mode="aspectFill" />
     <text class='kechengtxt'>Scratch图形化编程</text>
     <text class='kechengneirongtxt'>使用 Scratch，你可以编写属于你的互动媒体，像是故事、游戏、动画，然后你可以将你的创意分享给全世界。Scratch 帮助年轻人更具创造力、逻辑力、协作力。 这些都是生活在 21 世纪不可或缺的基本能力。</text>
   </view>
 
   <view class='kechengjieshao_xiao'>
-    <image class='full_image' src="pic/Arduino.jpg" mode="aspectFill" />
+    <image class='full_image' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/arduino.jpg" mode="aspectFill" />
     <text class='kechengtxt'>Arduino智能硬件编程</text>
     <text class='kechengneirongtxt'>Arduino是一款便捷灵活、方便上手的开源电子原型平台，基于移动端软硬件的编程应用、物联网实战应用以及人工智能移动端应用开发。通过Scratch编程语言学习之后即可开发智能小车、智能家居等各种智能产品。</text>
   </view>
   <view class='kechengjieshao_xiao'>
-    <image class='full_image' src="pic/python.jpg" mode="aspectFill" />
+    <image class='full_image' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/python.jpg" mode="aspectFill" />
     <text class='kechengtxt'>Python人工智能语言</text>
     <text class='kechengneirongtxt'>人工智能时代首先编程语言，简单易学，功能强大，无处不在，无所不能。通过学习python，可掌握编程语言基础及物联网应用开发、核心算法及服务器开发、爬虫数据分析与挖掘，学习人工智能机器学习基本原理及应用。</text>
   </view>
@@ -87,27 +133,109 @@
 
 <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex; " >
   <view class='jiaoshijianjie' >
-    <image class="jiaoshijianjieimg"  src='./师资/石老师.jpg' />
+    <image class="jiaoshijianjieimg"  src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/石老师.jpg' />
     <text class="jiaoshijianjietxt">石老师</text>
   </view>
   <view class='jiaoshijianjie' >
-    <image class="jiaoshijianjieimg"  src='./师资/石老师.jpg' />
-    <text class="jiaoshijianjietxt">石老师</text>
+    <image class="jiaoshijianjieimg"  src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/冀老师.jpg' />
+    <text class="jiaoshijianjietxt">冀老师</text>
   </view>
   <view class='jiaoshijianjie' >
-    <image class="jiaoshijianjieimg" src='./师资/石老师.jpg' />
-    <text class="jiaoshijianjietxt">石老师</text>
+    <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/冯老师.jpg' />
+    <text class="jiaoshijianjietxt">冯老师</text>
   </view>
   <view class='jiaoshijianjie' >
-    <image class="jiaoshijianjieimg" src='./师资/石老师.jpg' />
-    <text class="jiaoshijianjietxt">石老师</text>
+    <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/寒冰老师.jpg' />
+    <text class="jiaoshijianjietxt">郑老师</text>
   </view>
   <view class='jiaoshijianjie' >
-    <image class="jiaoshijianjieimg" src='./师资/石老师.jpg' />
-    <text class="jiaoshijianjietxt">石老师</text>
+    <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/王老师.jpg' />
+    <text class="jiaoshijianjietxt">王老师</text>
+  </view>
+  <view class='jiaoshijianjie' >
+    <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/张老师.jpg' />
+    <text class="jiaoshijianjietxt">张老师</text>
+  </view>
+  <view class='jiaoshijianjie' >
+    <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/毛老师.jpg' />
+    <text class="jiaoshijianjietxt">毛老师</text>
+  </view>
+  <view class='jiaoshijianjie' >
+    <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/闫老师.jpg' />
+    <text class="jiaoshijianjietxt">闫老师</text>
+  </view>
+  <view class='jiaoshijianjie' >
+    <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/马老师.jpg' />
+    <text class="jiaoshijianjietxt">马老师</text>
   </view>
 </scroll-view>
 
+
+  <!--图文标题栏（荣誉资质）-->
+  <view class='tuwenbiaoti'>
+    <image class='tuwenicon' src='./icon/shouzhi.png' />
+    <text class='tuwentxt'> 荣誉资质</text>
+  </view>
+
+<scroll-view scroll-x="true" style=" white-space: nowrap; display: flex; " >
+  <view class='jiaoshijianjie' >
+    <image class="jiaoshijianjieimg"  src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/bcs认证证书1.jpg' />
+    <text class="jiaoshijianjietxt">BCS认证</text>
+  </view>
+  <view class='jiaoshijianjie' >
+    <image class="jiaoshijianjieimg"  src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/bcs认证证书2.jpg' />
+    <text class="jiaoshijianjietxt">BCS认证</text>
+  </view>
+  <view class='jiaoshijianjie' >
+    <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/google认证证书1.jpg' />
+    <text class="jiaoshijianjietxt">google认证</text>
+  </view>
+  <view class='jiaoshijianjie' >
+    <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/google认证证书2.jpg' />
+    <text class="jiaoshijianjietxt">google认证</text>
+  </view>
+  <view class='jiaoshijianjie' >
+    <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/网易认证证书.jpg' />
+    <text class="jiaoshijianjietxt">网易认证</text>
+  </view>
+  <view class='jiaoshijianjie' >
+    <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/创客教师资质.jpg' />
+    <text class="jiaoshijianjietxt">创客教师资质</text>
+  </view>
+</scroll-view>
+
+  <!--图文标题栏（资讯及活动）-->
+  <view class='tuwenbiaoti'>
+    <image class='tuwenicon' src='./icon/shouzhi.png' />
+    <text class='tuwentxt'>资讯及活动</text>
+  </view>
+  
+  <view class='zixun'>
+    <view class='zixuntxt'>
+      <text>听说，这才是今年母亲节最流行的打开方式！</text>
+    </view>
+    <view class='zixunimg'>
+      <image class="zixun_image" mode="aspectFill" src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/闫老师.jpg"></image>
+    </view>
+  </view>
+
+  <view class='zixun'>
+    <view class='zixuntxt'>
+      <text>听说，这才是今年母亲节最流行的打开方式！</text>
+    </view>
+    <view class='zixunimg'>
+      <image class="zixun_image" mode="aspectFill" src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/闫老师.jpg"></image>
+    </view>
+  </view>
+
+  <view class='zixun'>
+    <view class='zixuntxt'>
+      <text>听说，这才是今年母亲节最流行的打开方式！</text>
+    </view>
+    <view class='zixunimg'>
+      <image class="zixun_image" mode="aspectFill" src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/闫老师.jpg"></image>
+    </view>
+  </view>
 
 </view>
                                                                                                                                                                                                                                                                                                                                                                             

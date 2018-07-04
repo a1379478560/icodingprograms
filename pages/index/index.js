@@ -9,11 +9,12 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     pics: [
-      { url: 'pic/shoutu1.jpg' },
-      { url: 'pic/shoutu2.jpg' },
-      { url: 'pic/shoutu3.jpg' },
-      { url: 'pic/shoutu4.jpg' },
-      { url: 'pic/shoutu5.jpg' },
+      { url: 'https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/shoutu1.jpg' },
+      { url: 'https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/shoutu2.jpg' },
+      { url: 'https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/shoutu3.jpg' },
+      { url: 'https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/shoutu4.jpg' },
+      { url: 'https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/shoutu5.jpg' },
+      { url: 'https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/shoutu6.jpg' },
     ]
   },
   //事件处理函数
@@ -24,7 +25,7 @@ Page({
   },
   phoneCall: function () {
     wx.makePhoneCall({
-      phoneNumber: '15732135100', 
+      phoneNumber: '18132047093', 
       success: function () {
         console.log("拨打电话成功！")
       },
