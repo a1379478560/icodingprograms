@@ -34,3 +34,37 @@
     color: #000000;
     background-color: #ff6100; 
 }
+
+/**发现**/
+.zixun{
+
+  margin-top: 10rpx;
+  height: 200rpx;
+  width: 95%;
+  background: #FFF;
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-left: 1px solid rgba(0, 0, 0, .1);
+  border-right: 1px solid rgba(0, 0, 0, .1);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border-radius: 15rpx;
+  padding: 10rpx;
+}
+.ziuxntxt {
+  font-size: 35rpx;
+  height: 130rpx;
+  width: 50%;
+}
+.zixunimg {
+
+  height: 190rpx;
+  width: 50%;
+  border-radius: 5rpx;
+}
+.zixun_image {
+
+  height: 190rpx;
+  width: 99%;
+  border-radius: 5rpx;
+}

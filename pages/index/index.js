@@ -70,5 +70,12 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  onShareAppMessage: function () {
+    return {
+      title: 'icoding编程学院',
+      desc: 'icoding编程学院欢迎你!',
+      path: 'pages/index/index'
+    }
   }
 })

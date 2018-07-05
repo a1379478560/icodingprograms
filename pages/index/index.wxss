@@ -162,20 +162,6 @@
     align-items: stretch;
 }
 
-/* .jiaoshijieshao {
-    margin-top: 20rpx;
-    height: 500rpx;
-    width: 90%;
-    background: #FFF;
-    border: 1px solid rgba(0, 0, 0, .1);
-    border-left: 10rpx;
-    border-right: 10rpx;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: all 300ms ease;
-} */
-
 /**教师简介**/
 .jiaoshijianjie {
     margin-top: 10rpx;
@@ -195,40 +181,11 @@
   height: 350rpx;
   width: 90%;
   display: block;
+  border-radius: 5px
 }
 .jiaoshijianjietxt {
-  font-size: 42rpx;
+  font-size: 35rpx;
   height: 100rpx;
   width: 100%;
-  
-}
-.zixun{
-
-  margin-top: 10rpx;
-  height: 200rpx;
-  width: 95%;
-  background: #FFF;
-  border: 3px solid rgba(0, 0, 0, .2);
-  border-left: 3px solid rgba(0, 0, 0, .2);
-  border-right: 3px solid rgba(0, 0, 0, .2);
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
-.ziuxntxt {
-  font-size: 35rpx;
-  height: 130rpx;
-  width: 50%;
-}
-.zixunimg {
-
-  height: 190rpx;
-  width: 50%;
-  
-}
-.zixun_image {
-
-  height: 190rpx;
-  width: 99%;
   
 }
