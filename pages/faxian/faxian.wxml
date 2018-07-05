@@ -1,0 +1,36 @@
+<!--pages/faxian/faxian.wxml-->
+<view class='container'>
+<!--图文标题栏（资讯及活动）-->
+  <view class='tuwenbiaoti'>
+    <image class='tuwenicon' src='../index/icon/shouzhi.png' />
+    <text class='tuwentxt'>资讯及活动</text>
+  </view>
+  
+  <view class='zixun'>
+    <view class='zixuntxt'>
+      <text>听说，这才是今年母亲节最流行的打开方式！</text>
+    </view>
+    <view class='zixunimg'>
+      <image class="zixun_image" mode="aspectFill" src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/闫老师.jpg"></image>
+    </view>
+  </view>
+
+  <view class='zixun'>
+    <view class='zixuntxt'>
+      <text>听说，这才是今年母亲节最流行的打开方式！</text>
+    </view>
+    <view class='zixunimg'>
+      <image class="zixun_image" mode="aspectFill" src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/闫老师.jpg"></image>
+    </view>
+  </view>
+
+  <view class='zixun'>
+    <view class='zixuntxt'>
+      <text>听说，这才是今年母亲节最流行的打开方式！</text>
+    </view>
+    <view class='zixunimg'>
+      <image class="zixun_image" mode="aspectFill" src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/闫老师.jpg"></image>
+    </view>
+  </view>
+
+</view>

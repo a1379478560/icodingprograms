@@ -8,3 +8,29 @@
   padding: 00rpx 0;
   box-sizing: border-box;
 } 
+/**图文标题**/
+.tuwenbiaoti {
+    margin-top: 0rpx;
+    height: 80rpx;
+    width: 100%;
+    background: #FFF;
+    border: none;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    transition: all 300ms ease;
+}
+.tuwenicon {
+    width: 40rpx;
+    height: 40rpx;
+    margin: 10rpx;
+    
+}
+.tuwentxt {
+    margin-top: 10rpx;
+    font-size: 40rpx;
+    color: #000000;
+    background-color: #ff6100; 
+}

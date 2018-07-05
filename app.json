@@ -1,27 +1,39 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/kecheng/kecheng",
+    "pages/faxian/faxian"
   ],
-  "window":{
-    "backgroundTextStyle":"black",
+  "window": {
+    "backgroundTextStyle": "black",
     "navigationBarBackgroundColor": "#333333",
     "navigationBarTitleText": "icoding青少年编程",
-    "navigationBarTextStyle":"light"
+    "navigationBarTextStyle": "light"
   },
   "tabBar": {
-    "color":"#555555",
-    "selectedColor":"#ff6100",
-    "backgroundColor":"#ffffff",
+    "color": "#555555",
+    "selectedColor": "#ff6100",
+    "backgroundColor": "#ffffff",
     "list": [
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath":"pages/index/icon/shouyeimg.png"
+        "iconPath": "pages/index/icon/shouyeimg.png"
+      },
+      {
+        "pagePath": "pages/kecheng/kecheng",
+        "text": "课程",
+        "iconPath": "pages/index/icon/kechengjieshaoimg.png"
+      },
+      {
+        "pagePath": "pages/faxian/faxian",
+        "text": "发现",
+        "iconPath": "pages/index/icon/faxianimg.png"
       },
       {
         "pagePath": "pages/logs/logs",
-        "text":"我的",
+        "text": "我的",
         "iconPath": "pages/index/icon/myimg.png"
       }
     ]
