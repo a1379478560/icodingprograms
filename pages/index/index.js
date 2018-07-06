@@ -9,20 +9,48 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     pics: [
-      { url: 'https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/shoutu1.jpg' },
-      { url: 'https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/shoutu2.jpg' },
-      { url: 'https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/shoutu3.jpg' },
-      { url: 'https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/shoutu4.jpg' },
-      { url: 'https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/shoutu5.jpg' },
-      { url: 'https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/shoutu6.jpg' },
+      { url: 'https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/logo.jpg' },
+      { url: 'https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/kechengtixi.jpg' },
+      { url: 'https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/jiaoshituandui.jpg' },
+      { url: 'https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/shishixuexiao.jpg' },
+      { url: 'https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/xueshenghuojiang.jpg' },
     ]
   },
   //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
+  bindTokc: function() {
+    wx.switchTab({
+      url: '../kecheng/kecheng',
+      success: function () {
+        console.log("切换页面成功！")
+      },
+      fail: function () {
+        console.log("切换页面失败！")
+      },
+      complete: function () {
+        console.log("complete！")
+      }
     })
   },
+  bindToonline: function () {
+    wx.switchTab({
+      url: '../kecheng/kecheng',
+      success: function () {
+        console.log("切换页面成功！")
+      },
+      fail: function () {
+        console.log("切换页面失败！")
+      },
+      complete:function(){
+        console.log("complete！")
+      }
+    })
+  },
+  bindTomy: function () {
+    wx.switchTab({
+      url: '../my/my'
+    })
+  },
+  
   phoneCall: function () {
     wx.makePhoneCall({
       phoneNumber: '18132047093', 

@@ -11,40 +11,127 @@
     </swiper> 
   <!-- 联系电话 -->
   <view class="phonecall"   bindtap="phoneCall">
-    <view class="weui-cell__bd">
+    <!-- <view class="weui-cell__bd">
       <text decode="{{true}}" space="{{true}}" class="phonenum" >&nbsp;&nbsp;&nbsp;   </text>
-    </view>
-    <view class="phone_img"  >
+    </view> -->
+    <!-- <view class="phone_img"  >
       <image class="phoneicon" background-size="cover" src="./icon/phone.png" />
-    </view> 
+    </view>  -->
     <view class="weui-cell__bd">
-      <text class="phonenum" >18132047093</text>
+      <text decode='{{true}}' class="phonenum" >咨询热线：&nbsp;18132047093&nbsp;</text>
     </view>
   </view>
   <!-- 导航 -->
   <view class='navigator'>
-    <view class='navigateitem'>
-      <image class='navicon' src='./icon/kechengjieshaoimg.png' />
+    <view class='navigateitem' bindtap="bindTokc">
+      <image class='navicon' src='./icon/kc.png' />
       <text class='navitxt'> 课程介绍</text>
     </view>
-    <view class='navigateitem'>
-      <image class='navicon' src='./icon/yuyueimg.png' />
+    <view class='navigateitem' bindtap="bindTomy">
+      <image class='navicon' src='./icon/yy2.png' />
       <text class='navitxt'> 预约试听</text>
     </view>
-    <view class='navigateitem'>
+    <view class='navigateitem' bindtap="bindToonline">
       <image class='navicon' src='./icon/shipinimg.png' />
-      <text class='navitxt'> 在线视频</text>
+      <text class='navitxt'> 线上课程</text>
     </view>
-    <view class='navigateitem'>
-      <image class='navicon' src='./icon/fenxiangimg.png' />
+    
+    <view class='navigateitem' >
+      <button class='btn'  open-type = 'share'>
+        <image class='navicon' src='./icon/fx.png' />
+      </button>
       <text class='navitxt'> 我要分享</text>
     </view>
   </view>
-  
-  <!--图文标题栏（课程落地学校）-->
+
+    <include src="../kecheng/kecheng.wxml" />
+
+
+  <!--图文标题栏（教师介绍）-->
   <view class='tuwenbiaoti'>
-    <image class='tuwenicon' src='./icon/shouzhi.png' />
-    <text class='tuwentxt'> 课程落地学校</text>
+     <!-- <image class='tuwenicon' src='./icon/shouzhi.png' />  -->
+     <view class='red-bg'></view> 
+     <text decode='{{true}}' class='tuwentxt'> &nbsp;&nbsp;&nbsp;教师介绍</text> 
+    <!-- <image class='biaoti' src='./icon/1.jpg' /> -->
+  </view>
+
+<scroll-view scroll-x="true" style=" white-space: nowrap; display: flex; " >
+  <view class='jiaoshijianjie' >
+    <image class="jiaoshijianjieimg"  src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/石老师.jpg' />
+    <text class="jiaoshijianjietxt">石老师</text>
+  </view>
+  <!-- <view class='jiaoshijianjie' >
+    <image class="jiaoshijianjieimg"  src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/冀老师.jpg' />
+    <text class="jiaoshijianjietxt">冀老师</text>
+  </view> -->
+  <!-- <view class='jiaoshijianjie' >
+    <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/冯老师.jpg' />
+    <text class="jiaoshijianjietxt">冯老师</text>
+  </view> -->
+  <view class='jiaoshijianjie' >
+    <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/寒冰老师.jpg' />
+    <text class="jiaoshijianjietxt">郑老师</text>
+  </view>
+  <view class='jiaoshijianjie' >
+    <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/王老师.jpg' />
+    <text class="jiaoshijianjietxt">王老师</text>
+  </view>
+  <!-- <view class='jiaoshijianjie' >
+    <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/张老师.jpg' />
+    <text class="jiaoshijianjietxt">张老师</text>
+  </view> -->
+  <view class='jiaoshijianjie' >
+    <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/毛老师.jpg' />
+    <text class="jiaoshijianjietxt">毛老师</text>
+  </view>
+  <view class='jiaoshijianjie' >
+    <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/闫老师.jpg' />
+    <text class="jiaoshijianjietxt">闫老师</text>
+  </view>
+  <!-- <view class='jiaoshijianjie' >
+    <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/马老师.jpg' />
+    <text class="jiaoshijianjietxt">马老师</text>
+  </view> -->
+</scroll-view>
+
+
+  <!--图文标题栏（荣誉资质）-->
+  <view class='tuwenbiaoti'>
+     <view class='red-bg'></view> 
+     <text decode='{{true}}' class='tuwentxt'> &nbsp;&nbsp;&nbsp;荣誉资质</text> 
+  </view>
+
+<scroll-view scroll-x="true" style=" white-space: nowrap; display: flex; " >
+  <view class='jiaoshijianjie' >
+    <image class="jiaoshijianjieimg"  src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/bcs认证证书1.jpg' />
+    <!-- <text class="jiaoshijianjietxt">BCS认证</text> -->
+  </view>
+  <view class='jiaoshijianjie' >
+    <image class="jiaoshijianjieimg"  src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/bcs认证证书2.jpg' />
+    <!-- <text class="jiaoshijianjietxt">BCS认证</text> -->
+  </view>
+  <!-- <view class='jiaoshijianjie' >
+    <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/google认证证书1.jpg' />
+    <text class="jiaoshijianjietxt">google认证</text>
+  </view>
+  <view class='jiaoshijianjie' >
+    <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/google认证证书2.jpg' />
+    <text class="jiaoshijianjietxt">google认证</text>
+  </view>
+  <view class='jiaoshijianjie' >
+    <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/网易认证证书.jpg' />
+    <text class="jiaoshijianjietxt">网易认证</text>
+  </view> -->
+  <view class='jiaoshijianjie' >
+    <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/创客教师资质.jpg' />
+    <!-- <text class="jiaoshijianjietxt">创客教师资质</text> -->
+  </view>
+</scroll-view>
+
+<!--图文标题栏（课程实施学校）-->
+  <view class='tuwenbiaoti'>
+     <view class='red-bg'></view> 
+     <text decode='{{true}}' class='tuwentxt'> &nbsp;&nbsp;&nbsp;课程实施学校</text> 
   </view>
   
 
@@ -91,97 +178,16 @@
 
   <!--图文标题栏（个性化小班教学）-->
   <view class='tuwenbiaoti'>
-    <image class='tuwenicon' src='./icon/shouzhi.png' />
-    <text class='tuwentxt'> 个性化小班教学</text>
+     <view class='red-bg'></view> 
+     <text decode='{{true}}' class='tuwentxt'> &nbsp;&nbsp;&nbsp;个性化小班教学</text> 
   </view>
   <image class='big_full_image' src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/小班教学1.jpg' mode="aspectFill" />
   <image class='full_image' src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/小班教学2.jpg' mode="aspectFill" />
-  <include src="../kecheng/kecheng.wxml" />
-
-
-  <!--图文标题栏（教师介绍）-->
-  <view class='tuwenbiaoti'>
-    <image class='tuwenicon' src='./icon/shouzhi.png' />
-    <text class='tuwentxt'> 教师介绍</text>
-  </view>
-
-<scroll-view scroll-x="true" style=" white-space: nowrap; display: flex; " >
-  <view class='jiaoshijianjie' >
-    <image class="jiaoshijianjieimg"  src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/石老师.jpg' />
-    <text class="jiaoshijianjietxt">石老师</text>
-  </view>
-  <view class='jiaoshijianjie' >
-    <image class="jiaoshijianjieimg"  src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/冀老师.jpg' />
-    <text class="jiaoshijianjietxt">冀老师</text>
-  </view>
-  <view class='jiaoshijianjie' >
-    <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/冯老师.jpg' />
-    <text class="jiaoshijianjietxt">冯老师</text>
-  </view>
-  <view class='jiaoshijianjie' >
-    <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/寒冰老师.jpg' />
-    <text class="jiaoshijianjietxt">郑老师</text>
-  </view>
-  <view class='jiaoshijianjie' >
-    <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/王老师.jpg' />
-    <text class="jiaoshijianjietxt">王老师</text>
-  </view>
-  <view class='jiaoshijianjie' >
-    <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/张老师.jpg' />
-    <text class="jiaoshijianjietxt">张老师</text>
-  </view>
-  <view class='jiaoshijianjie' >
-    <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/毛老师.jpg' />
-    <text class="jiaoshijianjietxt">毛老师</text>
-  </view>
-  <view class='jiaoshijianjie' >
-    <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/闫老师.jpg' />
-    <text class="jiaoshijianjietxt">闫老师</text>
-  </view>
-  <view class='jiaoshijianjie' >
-    <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/马老师.jpg' />
-    <text class="jiaoshijianjietxt">马老师</text>
-  </view>
-</scroll-view>
-
-
-  <!--图文标题栏（荣誉资质）-->
-  <view class='tuwenbiaoti'>
-    <image class='tuwenicon' src='./icon/shouzhi.png' />
-    <text class='tuwentxt'> 荣誉资质</text>
-  </view>
-
-<scroll-view scroll-x="true" style=" white-space: nowrap; display: flex; " >
-  <view class='jiaoshijianjie' >
-    <image class="jiaoshijianjieimg"  src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/bcs认证证书1.jpg' />
-    <text class="jiaoshijianjietxt">BCS认证</text>
-  </view>
-  <view class='jiaoshijianjie' >
-    <image class="jiaoshijianjieimg"  src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/bcs认证证书2.jpg' />
-    <text class="jiaoshijianjietxt">BCS认证</text>
-  </view>
-  <view class='jiaoshijianjie' >
-    <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/google认证证书1.jpg' />
-    <text class="jiaoshijianjietxt">google认证</text>
-  </view>
-  <view class='jiaoshijianjie' >
-    <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/google认证证书2.jpg' />
-    <text class="jiaoshijianjietxt">google认证</text>
-  </view>
-  <view class='jiaoshijianjie' >
-    <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/网易认证证书.jpg' />
-    <text class="jiaoshijianjietxt">网易认证</text>
-  </view>
-  <view class='jiaoshijianjie' >
-    <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/创客教师资质.jpg' />
-    <text class="jiaoshijianjietxt">创客教师资质</text>
-  </view>
-</scroll-view>
-
+  <!-- <include src="../faxian/faxian.wxml" /> -->
 <!--图文标题栏（资讯及活动）-->
   <view class='tuwenbiaoti'>
-    <image class='tuwenicon' src='../index/icon/shouzhi.png' />
-    <text class='tuwentxt'>资讯及活动</text>
+     <view class='red-bg'></view> 
+     <text decode='{{true}}' class='tuwentxt'> &nbsp;&nbsp;&nbsp;资讯及活动</text> 
   </view>
   
   <view class='zixun'>

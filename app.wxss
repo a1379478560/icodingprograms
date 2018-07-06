@@ -11,7 +11,7 @@
 /**图文标题**/
 .tuwenbiaoti {
     margin-top: 0rpx;
-    height: 80rpx;
+    height: 30rpx;
     width: 100%;
     background: #FFF;
     border: none;
@@ -19,21 +19,34 @@
     border-right: none;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     transition: all 300ms ease;
+    padding: 20rpx;
 }
-.tuwenicon {
-    width: 40rpx;
-    height: 40rpx;
-    margin: 10rpx;
-    
+.red-bg{
+  margin-top: 8rpx;
+  width: 25rpx;
+  height: 30rpx;
+  background: #ff6100;
 }
+
 .tuwentxt {
-    margin-top: 10rpx;
-    font-size: 40rpx;
+    margin-top: 0rpx;
+    font-size: 30rpx;
     color: #000000;
-    background-color: #ff6100; 
+
 }
+/* .biaoti{
+    width: 250rpx;
+    height: 80rpx;
+    margin: 10rpx;
+} */
+/* .tuwenicon {
+    width: 50rpx;
+    height: 50rpx;
+    margin: 0rpx;
+    
+} */
 
 /**发现**/
 .zixun{

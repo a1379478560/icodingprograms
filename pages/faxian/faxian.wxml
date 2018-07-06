@@ -2,8 +2,8 @@
 <view class='container'>
 <!--图文标题栏（资讯及活动）-->
   <view class='tuwenbiaoti'>
-    <image class='tuwenicon' src='../index/icon/shouzhi.png' />
-    <text class='tuwentxt'>资讯及活动</text>
+     <view class='red-bg'></view> 
+     <text decode='{{true}}' class='tuwentxt'> &nbsp;&nbsp;&nbsp;资讯及活动</text> 
   </view>
   
   <view class='zixun'>

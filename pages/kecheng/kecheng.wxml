@@ -1,12 +1,14 @@
 <!--pages/kecheng/kecheng.wxml-->
 <view class='container'>
- <!--图文标题栏（课程介绍）-->
+  <!--图文标题栏（教师介绍）-->
   <view class='tuwenbiaoti'>
-    <image class='tuwenicon' src='../index/icon/shouzhi.png' />
-    <text class='tuwentxt'> 课程介绍</text>
-  </view> 
+     <!-- <image class='tuwenicon' src='./icon/shouzhi.png' />  -->
+     <view class='red-bg'></view> 
+     <text decode='{{true}}' class='tuwentxt'> &nbsp;&nbsp;&nbsp;课程介绍</text> 
+    <!-- <image class='biaoti' src='./icon/1.jpg' /> -->
+  </view>
   <view class='kechengjieshao'>
-    <image class='big2_full_image' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/kechengtixi.jpg" mode="aspectFill" />
+    <image class='big2_full_image' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/kechengtixiimg.jpg" mode="aspectFill" />
     <text class='kechengtxt'>系统的课程体系</text>
     <text class='kechengneirongtxt'>icoding研发的青少年编程课是以编程课程为驱动的完善的计算机科学课程体系。我们经历五年的教育教学实践，研发出从小学到大学完善的课程体系。该课程体系汲取了英国CAS系统课程、美国code.org计算机课科学程体系、可汗学院计算机科学课程体系，Google CS First计算思维课程内核，日本青少年计算机科学课程体系，台湾的课程体系，而后进行本土化实践、总结，不断与国内外专家教授以及一线教师沟通切磋，最后形成该课程体系。</text>
   </view>

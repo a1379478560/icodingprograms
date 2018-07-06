@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/kecheng/kecheng",
-    "pages/faxian/faxian"
+    "pages/faxian/faxian",
+    "pages/my/my"
   ],
   "window": {
     "backgroundTextStyle": "black",
@@ -19,22 +20,26 @@
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath": "pages/index/icon/shouyeimg.png"
+        "selectedIconPath": "pages/index/icon/shouyeimg.png",
+        "iconPath": "pages/index/icon/index-black.png"
       },
       {
         "pagePath": "pages/kecheng/kecheng",
         "text": "课程",
-        "iconPath": "pages/index/icon/kechengjieshaoimg.png"
+        "selectedIconPath": "pages/index/icon/kc.png",
+        "iconPath": "pages/index/icon/course-black.png"
       },
       {
         "pagePath": "pages/faxian/faxian",
         "text": "发现",
-        "iconPath": "pages/index/icon/faxianimg.png"
+        "selectedIconPath": "pages/index/icon/faxianimg.png",
+        "iconPath": "pages/index/icon/fx-black.png"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/my/my",
         "text": "我的",
-        "iconPath": "pages/index/icon/myimg.png"
+        "selectedIconPath": "pages/index/icon/myimg.png",
+        "iconPath": "pages/index/icon/my-black.png"
       }
     ]
   },
@@ -43,10 +48,10 @@
     "downloadFile": 10000
   },
   "plugins": {
-      "txvideo": {
-        "version": "1.1.1",
-        "provider": "wxa75efa648b60994b"
-      }
-    },
+    "txvideo": {
+      "version": "1.1.1",
+      "provider": "wxa75efa648b60994b"
+    }
+  },
   "debug": true
 }
