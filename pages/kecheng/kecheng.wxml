@@ -4,29 +4,55 @@
   <view class='tuwenbiaoti'>
      <!-- <image class='tuwenicon' src='./icon/shouzhi.png' />  -->
      <view class='red-bg'></view> 
-     <text decode='{{true}}' class='tuwentxt'> &nbsp;&nbsp;&nbsp;课程介绍</text> 
+     <text decode='{{true}}' class='tuwentxt'> &nbsp;课程介绍</text> 
     <!-- <image class='biaoti' src='./icon/1.jpg' /> -->
   </view>
   <view class='kechengjieshao'>
     <image class='big2_full_image' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/kechengtixiimg.jpg" mode="aspectFill" />
+    <text class='kechengneirongtxt'>icoding青少年编程课程体系是以编程为驱动的系统的计算机科学课程体系，经历五年的教育教学实践，汲取了英国CAS、美国code.org、可汗学院、日本、台湾等国家地区青少年计算机课程体系，不断进行本土化实践、总结，最终形成了从小学到大学的系统计算机科学课程体系</text>
+  </view>
+  <view class='kechengjieshao_da'>
+    <image class='big3_full_image' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/tixitu.jpg" mode="scaleToFill" />
     <text class='kechengtxt'>系统的课程体系</text>
-    <text class='kechengneirongtxt'>icoding研发的青少年编程课是以编程课程为驱动的完善的计算机科学课程体系。我们经历五年的教育教学实践，研发出从小学到大学完善的课程体系。该课程体系汲取了英国CAS系统课程、美国code.org计算机课科学程体系、可汗学院计算机科学课程体系，Google CS First计算思维课程内核，日本青少年计算机科学课程体系，台湾的课程体系，而后进行本土化实践、总结，不断与国内外专家教授以及一线教师沟通切磋，最后形成该课程体系。</text>
+  </view>
+
+
+  <view class='kechengjieshao_xiao'>
+    <image class='full_image' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/zhuomian.png" mode="aspectFill" />
+    <text class='kechengtxt'>桌面编程</text>
+    <text class='kechengneirongtxt'>根据⼩学、初中、⾼中、⼤学不同知识储备特点采取Scratch、Python、Java语⾔进⾏基于桌⾯编程的学习，通过该课程学习掌握电脑硬件组成、运⾏原理，能够基于电脑开发桌⾯的程序（如游戏、动画、实⽤⼯具等）
+</text>
   </view>
 
   <view class='kechengjieshao_xiao'>
-    <image class='full_image' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/scratch.jpg" mode="aspectFill" />
-    <text class='kechengtxt'>Scratch图形化编程</text>
-    <text class='kechengneirongtxt'>使用 Scratch，你可以编写属于你的互动媒体，像是故事、游戏、动画，然后你可以将你的创意分享给全世界。Scratch 帮助年轻人更具创造力、逻辑力、协作力。 这些都是生活在 21 世纪不可或缺的基本能力。</text>
-  </view>
-
-  <view class='kechengjieshao_xiao'>
-    <image class='full_image' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/arduino.jpg" mode="aspectFill" />
-    <text class='kechengtxt'>Arduino智能硬件编程</text>
-    <text class='kechengneirongtxt'>Arduino是一款便捷灵活、方便上手的开源电子原型平台，基于移动端软硬件的编程应用、物联网实战应用以及人工智能移动端应用开发。通过Scratch编程语言学习之后即可开发智能小车、智能家居等各种智能产品。</text>
+    <image class='full_image' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/yidonghulianwang.png" mode="aspectFill" />
+    <text class='kechengtxt'>移动互联⽹编程</text>
+    <text class='kechengneirongtxt'>根据⼩学、初中、⾼中、⼤学不同知识储备特点采取App Inventor、Java、Kotlin语⾔进⾏移动互联⽹编程的学习，通过该课程学习掌握移动端（⼿机）组成、运⾏原理、交互原理，能够开发移动端应⽤程序（如实⽤⼯具、游戏、动画等）</text>
   </view>
   <view class='kechengjieshao_xiao'>
-    <image class='full_image' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/python.jpg" mode="aspectFill" />
-    <text class='kechengtxt'>Python人工智能语言</text>
-    <text class='kechengneirongtxt'>人工智能时代首先编程语言，简单易学，功能强大，无处不在，无所不能。通过学习python，可掌握编程语言基础及物联网应用开发、核心算法及服务器开发、爬虫数据分析与挖掘，学习人工智能机器学习基本原理及应用。</text>
+    <image class='full_image' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/wulianwang.png" mode="aspectFill" />
+    <text class='kechengtxt'>物联网编程</text>
+    <text class='kechengneirongtxt'>根据⼩学、初中、⾼中、⼤学不同知识储备特点采取Arduino、micro:bit、Raspberry Pi开源硬件进⾏物联⽹编程学习，通过该课程学习掌握各种开源硬件设计⽅式与组成原理，编程实现物与物连接通
+信（如智能家居）。</text>
+  </view>
+  <view class='kechengjieshao_xiao'>
+    <image class='full_image' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/webfuwuqi.png" mode="aspectFill" />
+    <text class='kechengtxt'>web服务器编程</text>
+    <text class='kechengneirongtxt'>根据初中、⾼中、⼤学不同知识储备特点采取Python、Java进⾏Web服务器编程学习，通过该课程学习掌握web服务器⽹络通信原理，开发服务器端应⽤程序（如各种⽹站、管理系统等）。</text>
+  </view>
+  <view class='kechengjieshao_xiao'>
+    <image class='full_image' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/shujufenxiyuwajue.png" mode="aspectFill" />
+    <text class='kechengtxt'>数据分析与挖掘</text>
+    <text class='kechengneirongtxt'>根据⾼中、⼤学不同知识储备特点采取Python进⾏数据分析与挖掘学习，通过该课程学习掌握数据获取（爬⾍）、数据过滤与清洗、数据分析、数据可视化，从⽽通过数据进⾏预测等。</text>
+  </view>
+  <view class='kechengjieshao_xiao'>
+    <image class='full_image' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/rengongzhineng.png" mode="aspectFill" />
+    <text class='kechengtxt'>⼈⼯智能</text>
+    <text class='kechengneirongtxt'>根据⾼中、⼤学不同知识储备特点采取Tensorflow深度学习框架进⾏⼈⼯智能学习，通过该课程编程实战学习掌握⼈⼯智能中核⼼算法及解决实际领域的问题。</text>
+  </view>
+  <view class='kechengjieshao_xiao'>
+    <image class='full_image' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/wangluoanquan.png" mode="aspectFill" />
+    <text class='kechengtxt'>⽹络安全&加密与破解</text>
+    <text class='kechengneirongtxt'>通过对kali linux系统学习，掌握基本的渗透⼯具原理及使⽤，学会如何保护⽹络隐私，加强⽹络安全意识，以及加密与破解的原理。</text>
   </view>
 </view>

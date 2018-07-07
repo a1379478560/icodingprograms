@@ -1,5 +1,5 @@
 /**index.wxss**/
-
+ @import "../kecheng/kecheng.wxss";
 /**轮播图**/
 .swiper {
   height: 400rpx;
@@ -37,7 +37,7 @@
     background-color: white; 
 }
 
-/**导航**/
+ /* 导航 */
 .navigator {
     margin-top: 10rpx;
     height: 190rpx;
@@ -51,11 +51,11 @@
     align-items: center;
     transition: all 300ms ease;
     padding-left:0rpx; 
-}
-.navigateitem {
+} 
+ .navigateitem {
     width: 188rpx;
     height: 130rpx;
-    margin: 10rpx;
+    margin: 0rpx;
     display: flex;
     flex-direction: column;
     padding-left:8rpx; 
@@ -69,6 +69,14 @@
     align-items: center;
 
 }
+.navicon_linshi {
+    width: 100rpx;
+    height: 130rpx;
+    margin: 0rpx;
+    align-items: center;
+
+}
+
 .navitxt {
     width: 100%;
     height: 30rpx;
@@ -84,7 +92,7 @@ button[class="btn"]::after {
   margin-top: 0rpx;
    background: none;
    padding: 0px;
-}
+} 
 .phonenum {
     font-size: 32rpx;
     color: #FF6100;
@@ -135,7 +143,7 @@ button[class="btn"]::after {
 
 
 /**课程介绍**/
-.kechengjieshao {
+/* .kechengjieshao {
     margin-top: 20rpx;
     height: 900rpx;
     width: 90%;
@@ -148,7 +156,7 @@ button[class="btn"]::after {
     align-items: center;
     transition: all 300ms ease;
 }
-.kechengjieshao_xiao {  /**因为下面三个描述比较少，用的框小一点**/
+.kechengjieshao_xiao {  
     margin-top: 20rpx;
     height: 650rpx;
     width: 90%;
@@ -174,7 +182,7 @@ button[class="btn"]::after {
     color: #000000;
     background-color: white; 
     align-items: stretch;
-}
+} */
 
 /**教师简介**/
 .jiaoshijianjie {

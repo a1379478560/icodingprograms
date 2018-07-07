@@ -3,7 +3,7 @@
 /**课程介绍**/
 .kechengjieshao {
     margin-top: 20rpx;
-    height: 900rpx;
+    height: 700rpx;
     width: 90%;
     background: #FFF;
     border: 1px solid rgba(0, 0, 0, .1);
@@ -14,6 +14,30 @@
     align-items: center;
     transition: all 300ms ease;
 }
+
+.kechengjieshao_da {
+    margin-top: 20rpx;
+    height: 1200rpx;
+    width: 90%;
+    background: #FFF;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-left: 10rpx;
+    border-right: 10rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 300ms ease;
+}
+/**全屏图片**/
+.full_image {
+  height: 400rpx;
+  width: 100%;
+}
+.big3_full_image {
+  height: 1100rpx;
+  width: 100%;
+}
+
 .kechengjieshao_xiao {  /**因为下面三个描述比较少，用的框小一点**/
     margin-top: 20rpx;
     height: 650rpx;
@@ -40,4 +64,5 @@
     color: #000000;
     background-color: white; 
     align-items: stretch;
+    text-align: justify;
 }

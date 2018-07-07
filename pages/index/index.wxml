@@ -1,6 +1,5 @@
 <!--index.wxml-->
 <view class="container">
- 
     <!-- 轮播图   -->
     <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">  
       <block wx:for="{{pics}}" wx:for-index="index">  
@@ -21,7 +20,7 @@
       <text decode='{{true}}' class="phonenum" >咨询热线：&nbsp;18132047093&nbsp;</text>
     </view>
   </view>
-  <!-- 导航 -->
+   <!-- 导航 
   <view class='navigator'>
     <view class='navigateitem' bindtap="bindTokc">
       <image class='navicon' src='./icon/kc.png' />
@@ -42,7 +41,31 @@
       </button>
       <text class='navitxt'> 我要分享</text>
     </view>
+  </view> -->
+
+  <!-- 导航 -->
+  <view class='navigator'>
+    <view class='navigateitem' bindtap="bindTokc">
+      <image class='navicon_linshi' src='./icon/nv1.jpg' />
+
+    </view>
+    <view class='navigateitem' bindtap="bindTomy">
+      <image class='navicon_linshi' src='./icon/nv2.jpg' />
+
+    </view>
+    <view class='navigateitem' bindtap="bindToonline">
+      <image class='navicon_linshi' src='./icon/nv3.jpg' />
+
+    </view>
+    
+    <view class='navigateitem' >
+      <button class='btn'  open-type = 'share'>
+        <image class='navicon_linshi' src='./icon/nv4.jpg' />
+      </button>
+
+    </view>
   </view>
+
 
     <include src="../kecheng/kecheng.wxml" />
 
@@ -103,11 +126,23 @@
 
 <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex; " >
   <view class='jiaoshijianjie' >
+    <image class="jiaoshijianjieimg"  src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/bcs认证证书2.jpg' />
+    <!-- <text class="jiaoshijianjietxt">BCS认证</text> -->
+  </view>
+  <view class='jiaoshijianjie' >
     <image class="jiaoshijianjieimg"  src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/bcs认证证书1.jpg' />
     <!-- <text class="jiaoshijianjietxt">BCS认证</text> -->
   </view>
   <view class='jiaoshijianjie' >
-    <image class="jiaoshijianjieimg"  src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/bcs认证证书2.jpg' />
+    <image class="jiaoshijianjieimg"  src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/资质3.jpg' />
+    <!-- <text class="jiaoshijianjietxt">BCS认证</text> -->
+  </view>
+  <view class='jiaoshijianjie' >
+    <image class="jiaoshijianjieimg"  src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/资质1.jpg' />
+    <!-- <text class="jiaoshijianjietxt">BCS认证</text> -->
+  </view>
+  <view class='jiaoshijianjie' >
+    <image class="jiaoshijianjieimg"  src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/资质2.jpg' />
     <!-- <text class="jiaoshijianjietxt">BCS认证</text> -->
   </view>
   <!-- <view class='jiaoshijianjie' >
@@ -124,7 +159,6 @@
   </view> -->
   <view class='jiaoshijianjie' >
     <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/创客教师资质.jpg' />
-    <!-- <text class="jiaoshijianjietxt">创客教师资质</text> -->
   </view>
 </scroll-view>
 
@@ -171,8 +205,6 @@
     <image class='full_image' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/河北地质大学.jpg" mode="aspectFill" />
     <text class='kechengluoditxt'>河北地质大学</text>
   </view>
-
-
   <video class='show_video' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/1.mp4"  />
 
 

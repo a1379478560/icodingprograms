@@ -25,7 +25,7 @@
 }
 .red-bg{
   margin-top: 8rpx;
-  width: 25rpx;
+  width: 12rpx;
   height: 30rpx;
   background: #ff6100;
 }
