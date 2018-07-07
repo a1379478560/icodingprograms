@@ -63,6 +63,55 @@ Page({
     })
   },
 
+
+
+
+  bindTozixun1: function () {
+    wx.navigateTo({
+      url: '/pages/faxian/zixun/zixun1',
+      success: function () {
+        console.log("切换页面成功！")
+      },
+      fail: function () {
+        console.log("切换页面失败！")
+      },
+      complete: function () {
+        console.log("complete！")
+      }
+    })
+  },
+  bindTozixun2: function () {
+    wx.navigateTo({
+      url: '/pages/faxian/zixun/zixun2',
+      success: function () {
+        console.log("切换页面成功！")
+      },
+      fail: function () {
+        console.log("切换页面失败！")
+      },
+      complete: function () {
+        console.log("complete！")
+      }
+    })
+  },
+  bindTozixun3: function () {
+    wx.navigateTo({
+      url: '/pages/faxian/zixun/zixun3',
+      success: function () {
+        console.log("切换页面成功！")
+      },
+      fail: function () {
+        console.log("切换页面失败！")
+      },
+      complete: function () {
+        console.log("complete！")
+      }
+    })
+  },
+
+
+
+
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({

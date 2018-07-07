@@ -4,7 +4,10 @@
     "pages/logs/logs",
     "pages/kecheng/kecheng",
     "pages/faxian/faxian",
-    "pages/my/my"
+    "pages/my/my",
+    "pages/faxian/zixun/zixun1",
+    "pages/faxian/zixun/zixun2",
+    "pages/faxian/zixun/zixun3"
   ],
   "window": {
     "backgroundTextStyle": "black",

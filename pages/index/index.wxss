@@ -1,5 +1,6 @@
 /**index.wxss**/
  @import "../kecheng/kecheng.wxss";
+ @import "../faxian/faxian.wxss";
 /**轮播图**/
 .swiper {
   height: 400rpx;
@@ -99,14 +100,19 @@ button[class="btn"]::after {
     background-color: white; 
 }
 
-
+.scroll {
+  height:400rpx;
+  width: 90%;
+  padding: 30rpx;
+}
 /**全屏图片**/
 .full_image_xuexiao {
   height:1800rpx;
   width: 100%;
-  border: 0px solid rgba(0, 0, 0, .1);
-  border-left: 0rpx;
-  border-right: 0rpx;
+  background: #FFF;
+  border: none;
+  border-left: none;
+  border-right: none;
   border-radius: 30;
 }
 .big2_full_image {
@@ -116,8 +122,9 @@ button[class="btn"]::after {
 
 /**大一点的全屏图片（小班教学长图）**/
 .big_full_image {
-  height: 1100rpx;
+  height: 1500rpx;
   width: 100%;
+  border-radius: 30;
 }
 .show_video {
   height: 400rpx;
@@ -127,7 +134,7 @@ button[class="btn"]::after {
 .kechengluodi { 
     margin-top: 20rpx;
     height: 1100rpx;
-    width: 95%;
+    width: 89%;
     background: #FFF;
     display: flex;
     border: 0px solid rgba(0, 0, 0, .1);
@@ -214,4 +221,43 @@ button[class="btn"]::after {
   height: 100rpx;
   width: 100%;
   
+}
+.rongyuzizhi {
+    margin-top: 0rpx;
+    height: 350rpx;
+    width: 300rpx;
+    background: #FFF;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-left: 10rpx;
+    border-right: 10rpx;
+    flex-direction: column;
+    align-items: center;
+    display: inline-block;
+    text-align: center;
+    
+}
+.rongyuzizhiimg {
+  height: 350rpx;
+  width: 90%;
+  display: block;
+  border-radius: 5px
+}
+
+.gexinghuaxiaoban { 
+    margin-top: 20rpx;
+    height: 1700rpx;
+    width: 89%;
+    background: #FFF;
+    display: flex;
+    border: 0px solid rgba(0, 0, 0, .1);
+    border-left: 0rpx;
+    border-right: 0rpx;
+    flex-direction: column;
+    align-items: center;
+    transition: all 300ms ease;
+}
+.gexinghuaxiaoban_image {
+  height: 600rpx;
+  width: 100%;
+  border-radius: 30rpx;
 }

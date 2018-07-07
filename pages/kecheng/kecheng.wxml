@@ -3,6 +3,7 @@
   <!--图文标题栏（教师介绍）-->
   <view class='tuwenbiaoti'>
      <!-- <image class='tuwenicon' src='./icon/shouzhi.png' />  -->
+     <view class='light-bg'></view> 
      <view class='red-bg'></view> 
      <text decode='{{true}}' class='tuwentxt'> &nbsp;课程介绍</text> 
     <!-- <image class='biaoti' src='./icon/1.jpg' /> -->

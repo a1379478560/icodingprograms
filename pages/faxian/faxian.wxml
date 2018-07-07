@@ -2,34 +2,35 @@
 <view class='container'>
 <!--图文标题栏（资讯及活动）-->
   <view class='tuwenbiaoti'>
+    <view class='light-bg'></view> 
      <view class='red-bg'></view> 
      <text decode='{{true}}' class='tuwentxt'> &nbsp;&nbsp;&nbsp;资讯及活动</text> 
   </view>
   
-  <view class='zixun'>
+  <view class='zixun' bindtap='bindTozixun1'>
     <view class='zixuntxt'>
-      <text>听说，这才是今年母亲节最流行的打开方式！</text>
+      <text class='zixun_txt'>我们的教学特色：基于项目的教学（PBL）</text>
     </view>
     <view class='zixunimg'>
-      <image class="zixun_image" mode="aspectFill" src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/闫老师.jpg"></image>
+      <image class="zixun_image" mode="scaleToFill" src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/zixun1.jpg"></image>
     </view>
   </view>
 
-  <view class='zixun'>
+  <view class='zixun' bindtap='bindTozixun2'>
     <view class='zixuntxt'>
-      <text>听说，这才是今年母亲节最流行的打开方式！</text>
+      <text class='zixun_txt'>学员反馈：孩子眼中的编程</text>
     </view>
     <view class='zixunimg'>
-      <image class="zixun_image" mode="aspectFill" src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/闫老师.jpg"></image>
+      <image class="zixun_image" mode="scaleToFill" src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/zixun2.jpg"></image>
     </view>
   </view>
 
-  <view class='zixun'>
+  <view class='zixun' bindtap='bindTozixun3'>
     <view class='zixuntxt'>
-      <text>听说，这才是今年母亲节最流行的打开方式！</text>
+      <text class='zixun_txt'>课程报名：零基础班、智能硬件班、python班报名</text>
     </view>
     <view class='zixunimg'>
-      <image class="zixun_image" mode="aspectFill" src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/闫老师.jpg"></image>
+      <image class="zixun_image" mode="scaleToFill" src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/zixun3.jpg"></image>
     </view>
   </view>
 
