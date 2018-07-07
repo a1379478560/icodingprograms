@@ -17,7 +17,7 @@
       <image class="phoneicon" background-size="cover" src="./icon/phone.png" />
     </view>  -->
     <view class="weui-cell__bd">
-      <text decode='{{true}}' class="phonenum" >咨询热线：&nbsp;18132047093&nbsp;</text>
+      <text decode='{{true}}' class="phonenum" >一键咨询：&nbsp;18132047093&nbsp;</text>
     </view>
   </view>
    <!-- 导航 
@@ -170,10 +170,10 @@
   
 
   <view class='kechengluodi'>
-    <image class='full_image' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/桥西外国语小学.jpg" mode="aspectFill" />
-    <text class='kechengluoditxt'>桥西外国语小学</text>
+    <image class='full_image_xuexiao' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/xuexiao.jpg" mode="scaleToFill" />
+    <text class='kechengneirongtxt'>我们的课程已深入实施到石家庄桥西外国语小学、东风小学、东马路小学、维明路小学、精英博爱小学、青园街小学、高邑西北营中心小学、石家庄44中、河北地质大学等学校。</text>
   </view>
-  <view class='kechengluodi'>
+  <!-- <view class='kechengluodi'>
     <image class='full_image' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/东风小学.jpg" mode="aspectFill" />
     <text class='kechengluoditxt'>东风小学</text>
   </view>
@@ -205,7 +205,7 @@
     <image class='full_image' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/河北地质大学.jpg" mode="aspectFill" />
     <text class='kechengluoditxt'>河北地质大学</text>
   </view>
-  <video class='show_video' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/1.mp4"  />
+  <video class='show_video' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/1.mp4"  /> -->
 
 
   <!--图文标题栏（个性化小班教学）-->

@@ -101,9 +101,13 @@ button[class="btn"]::after {
 
 
 /**全屏图片**/
-.full_image {
-  height: 400rpx;
+.full_image_xuexiao {
+  height:1800rpx;
   width: 100%;
+  border: 0px solid rgba(0, 0, 0, .1);
+  border-left: 0rpx;
+  border-right: 0rpx;
+  border-radius: 30;
 }
 .big2_full_image {
   height: 500rpx;
@@ -122,13 +126,13 @@ button[class="btn"]::after {
 
 .kechengluodi { 
     margin-top: 20rpx;
-    height: 450rpx;
+    height: 1100rpx;
     width: 95%;
     background: #FFF;
-    border: 1px solid rgba(0, 0, 0, .1);
-    border-left: 10rpx;
-    border-right: 10rpx;
     display: flex;
+    border: 0px solid rgba(0, 0, 0, .1);
+    border-left: 0rpx;
+    border-right: 0rpx;
     flex-direction: column;
     align-items: center;
     transition: all 300ms ease;
