@@ -29,11 +29,7 @@
     transition: all 300ms ease;
 }
 /**全屏图片**/
-.full_image {
-  height: 400rpx;
-  width: 100%;
-  border-radius: 30rpx;
-}
+
 .big3_full_image {
   height: 1100rpx;
   width: 100%;

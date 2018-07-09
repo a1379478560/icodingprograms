@@ -43,3 +43,15 @@
     color: #000000;
 
 }
+
+.full_image {
+  height: 400rpx;
+  width: 100%;
+  border-radius: 30rpx;
+}
+
+::-webkit-scrollbar{
+width: 5rpx;
+height: 5rpx;
+color: transparent;
+}

@@ -33,8 +33,7 @@
   <view class='kechengjieshao_xiao'>
     <image class='full_image' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/wulianwang.png" mode="aspectFill" />
     <text class='kechengtxt'>物联网编程</text>
-    <text class='kechengneirongtxt'>根据⼩学、初中、⾼中、⼤学不同知识储备特点采取Arduino、micro:bit、Raspberry Pi开源硬件进⾏物联⽹编程学习，通过该课程学习掌握各种开源硬件设计⽅式与组成原理，编程实现物与物连接通
-信（如智能家居）。</text>
+    <text class='kechengneirongtxt'>根据⼩学、初中、⾼中、⼤学不同知识储备特点采取Arduino、micro:bit、Raspberry Pi开源硬件进⾏物联⽹编程学习，通过该课程学习掌握各种开源硬件设计⽅式与组成原理，编程实现物与物连接通信（如智能家居）。</text>
   </view>
   <view class='kechengjieshao_xiao'>
     <image class='full_image' src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/webfuwuqi.png" mode="aspectFill" />

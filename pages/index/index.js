@@ -32,8 +32,8 @@ Page({
     })
   },
   bindToonline: function () {
-    wx.switchTab({
-      url: '../kecheng/kecheng',
+    wx.navigateTo({
+      url: '../onlinecourse/onlinecourse',
       success: function () {
         console.log("切换页面成功！")
       },
@@ -150,8 +150,8 @@ Page({
   },
   onShareAppMessage: function () {
     return {
-      title: 'icoding编程学院',
-      desc: 'icoding编程学院欢迎你!',
+      title: '青少年编程学院',
+      desc: '青少年编程学院欢迎你!',
       path: 'pages/index/index'
     }
   }

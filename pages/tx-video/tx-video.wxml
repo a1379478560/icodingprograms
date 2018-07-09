@@ -1,0 +1,9 @@
+<!--pages/tx-video/tx-video.wxml-->
+
+<view class="container">
+  <view  class="video-box" wx:for="{{tx_videos}}" >
+    <txv-video class="full_image" vid="{{item.video.vid}}"  autoplay="{{true}}"  ></txv-video>
+    <text class='video_caption'>{{item.video.caption}}</text>
+    <text class='video_introduce'>{{item.video.introduce}}</text>
+  </view>
+</view>

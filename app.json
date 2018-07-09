@@ -7,12 +7,14 @@
     "pages/my/my",
     "pages/faxian/zixun/zixun1",
     "pages/faxian/zixun/zixun2",
-    "pages/faxian/zixun/zixun3"
+    "pages/faxian/zixun/zixun3",
+    "pages/tx-video/tx-video",
+    "pages/onlinecourse/onlinecourse"
   ],
   "window": {
     "backgroundTextStyle": "black",
     "navigationBarBackgroundColor": "#333333",
-    "navigationBarTitleText": "icoding青少年编程",
+    "navigationBarTitleText": "青少年编程学院",
     "navigationBarTextStyle": "light"
   },
   "tabBar": {
@@ -51,7 +53,7 @@
     "downloadFile": 10000
   },
   "plugins": {
-    "txvideo": {
+    "tencentvideo": {
       "version": "1.1.1",
       "provider": "wxa75efa648b60994b"
     }
