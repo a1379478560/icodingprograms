@@ -85,15 +85,17 @@
     align-items: center;
 
 }
-button[class="btn"]::after {
-  border: 0;
-  padding: 00rpx 0;
-} 
+
 .btn {
   margin-top: 0rpx;
    background: none;
    padding: 0px;
 } 
+button[class="btn"]::after {
+  border: 0;
+  padding: 00rpx 0;
+} 
+
 .phonenum {
     font-size: 32rpx;
     color: #FF6100;

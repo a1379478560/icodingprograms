@@ -7,7 +7,22 @@ Page({
   data: {
   
   },
-
+  //事件处理函数
+  to_tx_video: function (event) {
+    wx.navigateTo({
+      url: '../tx-video/tx-video?id=' + event.currentTarget.id,
+      success: function () {
+        console.log("切换页面成功！")
+      },
+      fail: function () {
+        console.log("切换页面失败！")
+      },
+      complete: function () {
+        console.log("complete！")
+        console.log(event)
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

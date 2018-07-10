@@ -20,6 +20,20 @@
     text-align: center;
     
 }
+.btn {
+  width: 70rpx;
+  height: 70rpx;
+  margin-top: 0rpx;
+  background: none;
+  padding: 0px;
+  align-items: center;
+  position: relative;
+  left: 150rpx;
+}
+button[class="btn"]::after {
+  border: 0;
+  padding: 00rpx 0;
+}  
 .one_video_img {
   height: 200rpx;
   width: 90%;

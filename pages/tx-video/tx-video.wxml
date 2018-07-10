@@ -1,9 +1,17 @@
 <!--pages/tx-video/tx-video.wxml-->
 
-<view class="container">
+<!-- <view class="container">
   <view  class="video-box" wx:for="{{tx_videos}}" >
-    <txv-video class="full_image" vid="{{item.video.vid}}"  autoplay="{{true}}"  ></txv-video>
+    <txv-video class="full_image" vid="{{item.video.vid}}"  playerid="vone" autoplay="{{true}}"  ></txv-video>
     <text class='video_caption'>{{item.video.caption}}</text>
     <text class='video_introduce'>{{item.video.introduce}}</text>
+  </view>
+</view> -->
+
+<view class='container'>
+  <view  class="video-box"  >
+    <txv-video class="full_image" vid="{{vid}}"  playerid="vone" autoplay="{{true}}"  ></txv-video>
+    <text class='video_caption'>{{caption}}</text>
+    <text class='video_introduce'>{{introduce}}</text>
   </view>
 </view>

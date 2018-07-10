@@ -1,23 +1,26 @@
 // pages/tx-video/tx-video.js
+var utilData = require('../../utils/util.js')
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    tx_videos : [
-      { video: { vid: "f0635hnqgwy", caption: "icoding学生作品之邓逸凡", introduce: "icoding学生作品之邓逸凡" } },
-      { video: { vid: "f0635hnqgwy", caption: "icoding学生作品之邓逸凡", introduce: "icoding学生作品之邓逸凡" } },
-      { video: { vid: "f0635hnqgwy", caption: "icoding学生作品之邓逸凡", introduce: "icoding学生作品之邓逸凡" } },
-      { video: { vid: "f0635hnqgwy", caption: "icoding学生作品之邓逸凡", introduce: "icoding学生作品之邓逸凡" } },
-    ],
+    sfee:"gesg"
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var tx_videos = utilData.TxVideoData(options.id)
+    console.log(tx_videos)
+    this.setData({
+      vid: tx_videos.vid,
+      caption: tx_videos.caption,
+      introduce: tx_videos.introduce,
+    }) 
   },
 
   /**
