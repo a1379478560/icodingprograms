@@ -1,19 +1,8 @@
 /* pages/tx-video/tx-video.wxss */
-/* .video-container {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 00rpx 0;
-  box-sizing: border-box;
-  background-color: #333333; 
-}  */
 
 .video-box {
     margin-top: 0rpx;
-    height: 700rpx;
+    height: 550rpx;
     width: 100%;
     background: #FFF;
     border: 1px solid rgba(0, 0, 0, .1);
@@ -21,22 +10,104 @@
     border-right: 10rpx;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
     transition: all 300ms ease;
-    background-color: wheat; 
+    background-color: white; 
 }
 .video_caption {
     margin-top: 50rpx;
     font-size: 32rpx;
     color: #ff6100;
-    background-color: wheat; 
+    background-color: white; 
     align-items: stretch;
+    
 }
 .video_introduce {
     margin-top: 20rpx;
     font-size: 27rpx;
     color: #000000;
-    background-color: wheat; 
+    background-color: white; 
     align-items: stretch;
     text-align: justify;
+}
+
+
+/**图文标题**/
+.video_title {
+    margin-top: 40rpx;
+    height: 70rpx;
+    width: 100%;
+    background: #FFF;
+    border: none;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    flex-direction: row;
+    /* align-items: flex-start; */
+    transition: all 300ms ease;
+    padding: 20rpx;
+}
+.caption {
+    margin-top: 0rpx;
+    font-size: 40rpx;
+    color: #000000;
+
+}
+.btn {
+  width: 70rpx;
+  height: 70rpx;
+  margin-top: 0rpx;
+  background: none;
+  padding: 0px;
+  align-items: center;
+  position: absolute;
+  right: 50rpx;
+}
+button[class="btn"]::after {
+  border: 0;
+  padding: 00rpx 0;
+} 
+.tuwentxt {
+    margin-top: 0rpx;
+    font-size: 35rpx;
+    color: #ff6100;
+}
+.introduce {
+    width: 90%;
+    margin-top: 30rpx;
+    font-size: 30rpx;
+    color: #000000;
+    margin-bottom: 50rpx;
+}
+
+.scroll {
+  height:280rpx;
+  width: 90%;
+  padding: 50rpx;
+}
+.one_video {
+    margin-top: 0rpx;
+    height: 250rpx;
+    width: 450rpx;
+    background: #FFF;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-left: 10rpx;
+    border-right: 10rpx;
+    flex-direction: column;
+    align-items: center;
+    display: inline-block;
+    text-align: center;
+    
+}
+.one_video_img {
+  height: 200rpx;
+  width: 90%;
+  display: block;
+  border-radius: 5px
+}
+.one_video_txt {
+  font-size: 35rpx;
+  height: 100rpx;
+  width: 100%;
+  
 }

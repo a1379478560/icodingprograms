@@ -27,8 +27,10 @@
   background: none;
   padding: 0px;
   align-items: center;
-  position: relative;
-  left: 150rpx;
+  position: absolute;
+  right: 50rpx;
+  /* position: relative;
+  left: 150rpx; */
 }
 button[class="btn"]::after {
   border: 0;
