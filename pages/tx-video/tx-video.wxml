@@ -1,41 +1,32 @@
 <!--pages/tx-video/tx-video.wxml-->
 
-<!-- <view class="container">
-  <view  class="video-box" wx:for="{{tx_videos}}" >
-    <txv-video class="full_image" vid="{{item.video.vid}}"  playerid="vone" autoplay="{{true}}"  ></txv-video>
-    <text class='video_caption'>{{item.video.caption}}</text>
-    <text class='video_introduce'>{{item.video.introduce}}</text>
-  </view>
-</view> -->
-
 <view class='container'>
   <view  class="video-box"  >
-    <txv-video class="full_image" vid="{{vid}}"  playerid="vone" autoplay="{{true}}"  ></txv-video>
-    <!-- <text class='video_caption'>{{caption}}</text>
-    <text class='video_introduce'>{{introduce}}</text> -->
-
-  <view class='video_title'>
-     <!-- <image class='tuwenicon' src='./icon/shouzhi.png' />  -->
-      <text decode='{{true}}' class='caption'> &nbsp;&nbsp;&nbsp;{{caption}}</text> 
-      <button class='btn'  open-type = 'share' >
-        <image style='width: 40rpx;height: 40rpx' src="../index/icon/share.png" /> 
-      </button>
-  </view>
+    <txv-video class="player_box" vid="{{vid}}"  playerid="vone" autoplay="{{true}}"  ></txv-video>
+    <view class='video_title'>
+        <text decode='{{true}}' class='caption'> &nbsp;&nbsp;&nbsp;{{caption}}</text> 
+        <button class='btn'  open-type = 'share' >
+          <image style='width: 40rpx;height: 40rpx' src="../index/icon/share.png" /> 
+        </button>
+    </view>
   </view>
 
 
-  <view class='tuwenbiaoti'>
+  <view class="{{show_teacher?'tuwenbiaoti':'hide'}}"  >
      <view class='light-bg'></view> 
      <view class='red-bg'></view> 
      <text decode='{{true}}' class='tuwentxt'> &nbsp;&nbsp;&nbsp;主讲人</text> 
   </view>
-  <text decode='{{true}}' class='introduce'> &nbsp;&nbsp;&nbsp;张老师具有丰富的教学经验以及开发经验十分嘎嘎额而发VRvase是额VB宝贝啊无法让我发。</text>
+  <view class="{{show_teacher?'teacher_pic':'hide'}}" >
+    <image  src="{{teacher_pic}}" />
+  </view>
+  <text class="{{show_teacher?'introduce':'hide'}}" decode='{{true}}' > {{teacher_intro}}</text>
   <view class='tuwenbiaoti'>
      <view class='light-bg'></view> 
      <view class='red-bg'></view> 
      <text decode='{{true}}' class='tuwentxt'> &nbsp;&nbsp;&nbsp;课程介绍</text> 
   </view>
-  <text decode='{{true}}' class='introduce'> &nbsp;&nbsp;&nbsp;{{introduce}}。</text>
+  <text decode='{{true}}' class='introduce'> {{introduce}}</text>
 
   <view class='tuwenbiaoti'>
      <view class='light-bg'></view> 
@@ -46,16 +37,16 @@
 <view class='scroll'>
   <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex; " >
     <view class='one_video' id="s1" bindtap="to_tx_video" >
-      <image class="one_video_img"  src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/石老师.jpg' />
-      <text class="one_video_txt">石老师</text>
+      <image class="one_video_img"  src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/s1.jpg' />
+      <text class="one_video_txt">Scratch课程纲要</text>
     </view>
-    <view class='one_video' id="s2" bindtap="to_tx_video">
-      <image class="one_video_img" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/寒冰老师.jpg' />
-      <text class="one_video_txt">郑老师</text>
+    <view class='one_video' id="app1" bindtap="to_tx_video">
+      <image class="one_video_img" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/app1.jpg' />
+      <text class="one_video_txt">App Inventor介绍</text>
     </view>
-    <view class='one_video' id="s3" bindtap="to_tx_video">
-      <image class="one_video_img" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/王老师.jpg' />
-      <text class="one_video_txt">王老师</text>
+    <view class='one_video' id="p1" bindtap="to_tx_video">
+      <image class="one_video_img" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/p1.jpg' />
+      <text class="one_video_txt">无所不能的Python</text>
     </view>
   </scroll-view>
 </view>

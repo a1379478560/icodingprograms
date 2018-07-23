@@ -9,8 +9,14 @@
   
   <view class='zixun' bindtap='bindTozixun1'>
     <view class='zixuntxt'>
-      <text class='zixun_txt'>我们的教学特色：基于项目的教学（PBL）</text>
+      <view class='zixun_txt'>
+        <text >我们的教学特色：基于项目的教学（PBL）</text>
+      </view>
+      <view class='zixun_txt2'>
+        <text >PBL：理解—计划—解决—检查—更新</text>
+      </view>
     </view>
+ 
     <view class='zixunimg'>
       <image class="zixun_image" mode="scaleToFill" src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/zixun1.jpg"></image>
     </view>
@@ -18,7 +24,12 @@
 
   <view class='zixun' bindtap='bindTozixun2'>
     <view class='zixuntxt'>
-      <text class='zixun_txt'>学员反馈：孩子眼中的编程</text>
+      <view class='zixun_txt'>
+        <text >学员反馈：孩子眼中的编程</text>
+      </view>
+      <view class='zixun_txt2'>
+        <text >编程是什么呢？就是我指挥着机器，给它一个指令，它就会按照我说的去做</text>
+      </view>
     </view>
     <view class='zixunimg'>
       <image class="zixun_image" mode="scaleToFill" src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/zixun2.jpg"></image>
@@ -27,11 +38,18 @@
 
   <view class='zixun' bindtap='bindTozixun3'>
     <view class='zixuntxt'>
-      <text class='zixun_txt'>课程报名：零基础班、智能硬件班、python班报名</text>
+      <view class='zixun_txt'>
+        <text >课程报名：零基础班、硬件班、python班报名</text>
+      </view>
+      <view class='zixun_txt2'>
+        <text >国际认证老师，完整的课程体系，小班教学、线上+线下结合</text>
+      </view>
     </view>
     <view class='zixunimg'>
       <image class="zixun_image" mode="scaleToFill" src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/zixun3.jpg"></image>
     </view>
   </view>
-
+  <view class="footer">
+    <image src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/faxian_footer.jpg" mode="aspectFill" /> 
+  </view>
 </view>

@@ -9,12 +9,13 @@
     "pages/faxian/zixun/zixun2",
     "pages/faxian/zixun/zixun3",
     "pages/tx-video/tx-video",
-    "pages/onlinecourse/onlinecourse"
+    "pages/onlinecourse/onlinecourse",
+    "pages/yuyueshiting/yuyueshiting"
   ],
   "window": {
     "backgroundTextStyle": "black",
     "navigationBarBackgroundColor": "#333333",
-    "navigationBarTitleText": "青少年编程学院",
+    "navigationBarTitleText": "icoding青少年编程学院",
     "navigationBarTextStyle": "light"
   },
   "tabBar": {

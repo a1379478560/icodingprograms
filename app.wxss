@@ -55,3 +55,7 @@ width: 5rpx;
 height: 5rpx;
 color: transparent;
 }
+
+.hide{
+    display: none;
+}

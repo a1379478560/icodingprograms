@@ -46,8 +46,8 @@ Page({
     })
   },
   bindTomy: function () {
-    wx.switchTab({
-      url: '../my/my'
+    wx.navigateTo({
+      url: '../yuyueshiting/yuyueshiting'
     })
   },
   

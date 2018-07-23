@@ -16,10 +16,19 @@
 .zixuntxt {
   height: 190rpx;
   width: 500rpx;
-  font-size: 32rpx;
+  /* font-size: 32rpx; */
+  display: flex;
+  flex-direction: column;
 }
-.ziuxn_txt {
+.zixun_txt {
   font-size: 32rpx;
+  
+}
+.zixun_txt2 {
+  margin-top: 20rpx;
+  font-size: 25rpx;
+  color: #c0c0c0
+
 }
 .zixunimg {
   height: 190rpx;
@@ -30,4 +39,23 @@
   height: 100%;
   width: 100%;
   border-radius: 5rpx;
+}
+.footer {
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+    height: 400rpx;
+    width: 93%;
+    background: #FFF;
+    display: flex;
+    border: 0px solid rgba(0, 0, 0, .1);
+    border-left: 0rpx;
+    border-right: 0rpx;
+    flex-direction: column;
+    align-items: center;
+    transition: all 300ms ease;
+}
+.footer image{
+  height: 400rpx;
+  width: 100%;
+  border-radius: 30rpx;
 }

@@ -1,20 +1,37 @@
-// pages/my/my.js
-//index.js
+// pages/yuyueshiting/yuyueshiting.js
 //获取应用实例
 const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
+  formSubmit: function (e) {
+    wx.request({
+      url: 'https://wx.4k12stem.com/yuyue', 
+      data: e.detail.value,
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: function (res) {
+        console.log(res.data)
+      }
+    })
+    wx.showToast({
+      title: '预约成功',
+      icon: 'succes',
+      duration: 1000,
+      mask: true
+    })
+    console.log('form发生了submit事件，携带数据为：', e.detail.value)
+  },
   //事件处理函数
   bindViewTap: function () {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
+    // wx.navigateTo({
+    //   url: '../logs/logs'
+    // })
   },
   onLoad: function () {
     if (app.globalData.userInfo) {

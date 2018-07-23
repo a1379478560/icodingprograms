@@ -220,3 +220,23 @@ button[class="btn"]::after {
   width: 100%;
   border-radius: 30rpx;
 }
+
+.footer {
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+    height: 200rpx;
+    width: 93%;
+    background: #FFF;
+    display: flex;
+    border: 0px solid rgba(0, 0, 0, .1);
+    border-left: 0rpx;
+    border-right: 0rpx;
+    flex-direction: column;
+    align-items: center;
+    transition: all 300ms ease;
+}
+.footer image{
+  height: 200rpx;
+  width: 100%;
+  border-radius: 30rpx;
+}

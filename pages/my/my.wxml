@@ -1,2 +1,7 @@
 <!--pages/my/my.wxml-->
-<text>开发中！敬请期待！</text>
+<!--index.wxml-->
+<view class="container">
+<text style='margin-top: 40rpx;'>开发中！敬请期待</text> 
+<image class="qr" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/myqr.jpg' />   
+</view>
+

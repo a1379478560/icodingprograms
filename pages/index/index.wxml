@@ -10,12 +10,7 @@
     </swiper> 
   <!-- 联系电话 -->
   <view class="phonecall"   bindtap="phoneCall">
-    <!-- <view class="weui-cell__bd">
-      <text decode="{{true}}" space="{{true}}" class="phonenum" >&nbsp;&nbsp;&nbsp;   </text>
-    </view> -->
-    <!-- <view class="phone_img"  >
-      <image class="phoneicon" background-size="cover" src="./icon/phone.png" />
-    </view>  -->
+
     <view class="weui-cell__bd">
       <text decode='{{true}}' class="phonenum" >一键咨询：&nbsp;18132047093&nbsp;</text>
     </view>
@@ -72,11 +67,9 @@
 
   <!--图文标题栏（教师介绍）-->
   <view class='tuwenbiaoti'>
-     <!-- <image class='tuwenicon' src='./icon/shouzhi.png' />  -->
      <view class='light-bg'></view> 
      <view class='red-bg'></view> 
      <text decode='{{true}}' class='tuwentxt'> &nbsp;&nbsp;&nbsp;教师介绍</text> 
-    <!-- <image class='biaoti' src='./icon/1.jpg' /> -->
   </view>
 <view class='scroll'>
   <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex; " >
@@ -244,6 +237,9 @@
     <view class='zixunimg'>
       <image class="zixun_image" mode="scaleToFill" src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/zixun3.jpg"></image>
     </view>
+  </view>
+  <view class="footer">
+    <image src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/footer.jpg" mode="aspectFill" /> 
   </view>
 
 

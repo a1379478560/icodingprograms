@@ -1,63 +1,187 @@
 <!--pages/onlinecourse/onlinecourse.wxml-->
 <view class='container'>
-  <!--图文标题栏（教师介绍）-->
+
+  <!--课程介绍-->
   <view class='tuwenbiaoti'>
-     <!-- <image class='tuwenicon' src='./icon/shouzhi.png' />  -->
       <view class='light-bg'></view> 
       <view class='red-bg'></view> 
-      <text decode='{{true}}' class='tuwentxt'> &nbsp;&nbsp;&nbsp;scratch初级课程&nbsp;&nbsp;</text> 
+      <text decode='{{true}}' class='tuwentxt'> &nbsp;&nbsp;&nbsp;课程介绍&nbsp;&nbsp;</text> 
       <button class='btn'  open-type = 'share' >
         <image style='width: 40rpx;height: 40rpx' src="../index/icon/share.png" /> 
       </button>
   </view>
   <view style='width: 100%;height: 30rpx;margin-top: 5rpx;display: flex;text-align:left;flex-direction: row;'>
-    <text  decode='{{true}}' style='color:#ff6100;font-size: 25rpx'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;适合小学入门学生学习</text>
+    <text  decode='{{true}}' style='color:#ff6100;font-size: 25rpx'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;课程体系及教学体系</text>
   </view>
 <view class='scroll'>
   <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex; " >
-    <view class='one_video' id="s1" bindtap="to_tx_video" >
-      <image class="one_video_img"  src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/石老师.jpg' />
-      <text class="one_video_txt">石老师</text>
+    <view class='one_video' id="jieshao0" bindtap="to_tx_video">
+      <image class="one_video_img" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/jieshao1.jpg' />
+      <text class="one_video_txt">小学到大学课程体系</text>
     </view>
-    <view class='one_video' id="s2" bindtap="to_tx_video">
-      <image class="one_video_img" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/寒冰老师.jpg' />
-      <text class="one_video_txt">郑老师</text>
-    </view>
-    <view class='one_video' id="s3" bindtap="to_tx_video">
-      <image class="one_video_img" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/王老师.jpg' />
-      <text class="one_video_txt">王老师</text>
+    <view class='one_video' id="jieshao1" bindtap="to_tx_video" >
+      <image class="one_video_img"  src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/jieshao2.jpg' />
+      <text class="one_video_txt">基于PBL五段教学体系</text>
     </view>
   </scroll-view>
 </view>
 
-  <!--图文标题栏（教师介绍）-->
+
+  <!--Scratch-->
   <view class='tuwenbiaoti'>
-     <!-- <image class='tuwenicon' src='./icon/shouzhi.png' />  -->
-     <view class='light-bg'></view> 
-     <view class='red-bg'></view> 
-     <text decode='{{true}}' class='tuwentxt'> &nbsp;&nbsp;&nbsp;scratch初级课程</text> 
-      <button class='btn'  open-type = 'share'  >
+      <view class='light-bg'></view> 
+      <view class='red-bg'></view> 
+      <text decode='{{true}}' class='tuwentxt'> &nbsp;&nbsp;&nbsp;Scratch&nbsp;&nbsp;</text> 
+      <button class='btn'  open-type = 'share' >
         <image style='width: 40rpx;height: 40rpx' src="../index/icon/share.png" /> 
       </button>
   </view>
   <view style='width: 100%;height: 30rpx;margin-top: 5rpx;display: flex;text-align:left;flex-direction: row;'>
-    <text  decode='{{true}}' style='color:#ff6100;font-size: 25rpx'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;适合小学入门学生学习</text>
+    <text  decode='{{true}}' style='color:#ff6100;font-size: 25rpx'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;桌面编程</text>
   </view>
 <view class='scroll'>
   <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex; " >
-    <view class='one_video' >
-      <image class="one_video_img"  src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/石老师.jpg' />
-      <text class="one_video_txt">石老师</text>
+    <view class='one_video' id="s1" bindtap="to_tx_video" >
+      <image class="one_video_img"  src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/s1.jpg' />
+      <text class="one_video_txt">Scratch课程纲要</text>
     </view>
-    <view class='one_video' >
-      <image class="one_video_img" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/寒冰老师.jpg' />
-      <text class="one_video_txt">郑老师</text>
-    </view>
-    <view class='one_video' >
-      <image class="one_video_img" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/王老师.jpg' />
-      <text class="one_video_txt">王老师</text>
+    <view class='one_video' id="s2" bindtap="to_tx_video">
+      <image class="one_video_img" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/s2.jpg' />
+      <text class="one_video_txt">Scratch项目实例</text>
     </view>
   </scroll-view>
 </view>
+
+
+
+  <!--Arduino-->
+  <view class='tuwenbiaoti'>
+      <view class='light-bg'></view> 
+      <view class='red-bg'></view> 
+      <text decode='{{true}}' class='tuwentxt'> &nbsp;&nbsp;&nbsp;Arduino&nbsp;&nbsp;</text> 
+      <button class='btn'  open-type = 'share' >
+        <image style='width: 40rpx;height: 40rpx' src="../index/icon/share.png" /> 
+      </button>
+  </view>
+  <view style='width: 100%;height: 30rpx;margin-top: 5rpx;display: flex;text-align:left;flex-direction: row;'>
+    <text  decode='{{true}}' style='color:#ff6100;font-size: 25rpx'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;物联网编程</text>
+  </view>
+<view class='scroll'>
+  <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex; " >
+    <view class='one_video' id="a1" bindtap="to_tx_video">
+      <image class="one_video_img" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/a1.jpg' />
+      <text class="one_video_txt">Arduino课程实例--倒车雷达</text>
+    </view>
+    <view class='one_video' id="a2" bindtap="to_tx_video" >
+      <image class="one_video_img"  src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/a2.jpg' />
+      <text class="one_video_txt">Arduino 课程实例—无人机控制</text>
+    </view>
+  </scroll-view>
+</view>
+
+  <!--Micro：bit-->
+  <view class='tuwenbiaoti'>
+      <view class='light-bg'></view> 
+      <view class='red-bg'></view> 
+      <text decode='{{true}}' class='tuwentxt'> &nbsp;&nbsp;&nbsp;Micro:bit&nbsp;&nbsp;</text> 
+      <button class='btn'  open-type = 'share' >
+        <image style='width: 40rpx;height: 40rpx' src="../index/icon/share.png" /> 
+      </button>
+  </view>
+  <view style='width: 100%;height: 30rpx;margin-top: 5rpx;display: flex;text-align:left;flex-direction: row;'>
+    <text  decode='{{true}}' style='color:#ff6100;font-size: 25rpx'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;物联网编程</text>
+  </view>
+<view class='scroll'>
+  <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex; " >
+    <view class='one_video' id="micro1" bindtap="to_tx_video" >
+      <image class="one_video_img"  src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/micro1.jpg' />
+      <text class="one_video_txt">课程实例--加速度感应  </text>
+    </view>
+
+    <view class='one_video' id="micro2" bindtap="to_tx_video">
+      <image class="one_video_img" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/micro2.jpg' />
+      <text class="one_video_txt">课程实例—石头剪刀布游戏</text>
+    </view>
+  </scroll-view>
+  </view>
+
+
+
+
+  <!--App Inventor-->
+  <view class='tuwenbiaoti'>
+      <view class='light-bg'></view> 
+      <view class='red-bg'></view> 
+      <text decode='{{true}}' class='tuwentxt'> &nbsp;&nbsp;&nbsp;App inventor&nbsp;&nbsp;</text> 
+      <button class='btn'  open-type = 'share' >
+        <image style='width: 40rpx;height: 40rpx' src="../index/icon/share.png" /> 
+      </button>
+  </view>
+  <view style='width: 100%;height: 30rpx;margin-top: 5rpx;display: flex;text-align:left;flex-direction: row;'>
+    <text  decode='{{true}}' style='color:#ff6100;font-size: 25rpx'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;移动互联网编程</text>
+  </view>
+<view class='scroll'>
+  <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex; " >
+    <view class='one_video' id="app1" bindtap="to_tx_video">
+      <image class="one_video_img" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/app1.jpg' />
+      <text class="one_video_txt">AppInventor介绍</text>
+    </view>
+    <view class='one_video' id="app2" bindtap="to_tx_video" >
+      <image class="one_video_img"  src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/app2.jpg' />
+      <text class="one_video_txt">课程实例--招猫逗狗</text>
+    </view>
+  </scroll-view>
+</view>
+
+  <!--Python-->
+  <view class='tuwenbiaoti'>
+      <view class='light-bg'></view> 
+      <view class='red-bg'></view> 
+      <text decode='{{true}}' class='tuwentxt'> &nbsp;&nbsp;&nbsp;Python&nbsp;&nbsp;</text> 
+      <button class='btn'  open-type = 'share' >
+        <image style='width: 40rpx;height: 40rpx' src="../index/icon/share.png" /> 
+      </button>
+  </view>
+  <view style='width: 100%;height: 30rpx;margin-top: 5rpx;display: flex;text-align:left;flex-direction: row;'>
+    <text  decode='{{true}}' style='color:#ff6100;font-size: 25rpx'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;桌面编程、网络编程、大数据处理、人工智能</text>
+  </view>
+<view class='scroll'>
+  <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex; " >
+    <view class='one_video' id="p1" bindtap="to_tx_video">
+      <image class="one_video_img" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/p1.jpg' />
+      <text class="one_video_txt">无所不能的python</text>
+    </view>
+    <view class='one_video' id="p2" bindtap="to_tx_video" >
+      <image class="one_video_img"  src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/p2.jpg' />
+      <text class="one_video_txt">课程实例—打砖块游戏</text>
+    </view>
+  </scroll-view>
+</view>
+
+  <!--raspberry pi-->
+  <view class='tuwenbiaoti'>
+      <view class='light-bg'></view> 
+      <view class='red-bg'></view> 
+      <text decode='{{true}}' class='tuwentxt'> &nbsp;&nbsp;&nbsp;树莓派&nbsp;&nbsp;</text> 
+      <button class='btn'  open-type = 'share' >
+        <image style='width: 40rpx;height: 40rpx' src="../index/icon/share.png" /> 
+      </button>
+  </view>
+  <view style='width: 100%;height: 30rpx;margin-top: 5rpx;display: flex;text-align:left;flex-direction: row;'>
+    <text  decode='{{true}}' style='color:#ff6100;font-size: 25rpx'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;树莓派</text>
+  </view>
+<view class='scroll'>
+  <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex; " >
+    <view class='one_video' id="rasp1" bindtap="to_tx_video">
+      <image class="one_video_img" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/rasp1.jpg' />
+      <text class="one_video_txt">什么是树莓派</text>
+    </view>
+    <view class='one_video' id="rasp2" bindtap="to_tx_video" >
+      <image class="one_video_img"  src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/rasp2.jpg' />
+      <text class="one_video_txt">树莓派视觉跟踪</text>
+    </view>
+  </scroll-view>
+</view>
+
 
 </view>

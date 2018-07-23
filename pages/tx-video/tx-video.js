@@ -7,20 +7,39 @@ Page({
    * 页面的初始数据
    */
   data: {
-    sfee:"gesg"
   },
-
+  to_tx_video: function (event) {
+    wx.navigateTo({
+      url: '../tx-video/tx-video?id=' + event.currentTarget.id,
+      success: function () {
+        console.log("切换页面成功！")
+      },
+      fail: function () {
+        console.log("切换页面失败！")
+      },
+      complete: function () {
+        console.log("complete！")
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that = this;
     var tx_videos = utilData.TxVideoData(options.id)
     console.log(tx_videos)
     this.setData({
       vid: tx_videos.vid,
       caption: tx_videos.caption,
       introduce: tx_videos.introduce,
+      teacher_intro:tx_videos.teacher_intro,
+      teacher_pic: tx_videos.teacher_pic,
+      show_teacher: tx_videos.show_teacher,
     }) 
+    wx.setNavigationBarTitle({
+      title: that.data.caption//页面标题为路由参数
+    })
   },
 
   /**
