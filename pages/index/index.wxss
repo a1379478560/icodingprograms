@@ -173,8 +173,17 @@ button[class="btn"]::after {
   height: 350rpx;
   width: 90%;
   display: block;
-  border-radius: 5px
+  border-radius: 15px;
+  box-shadow:0px 2px 3px 3px rgba(143, 124, 124,0.5);
+  /* box-shadow:0px 1px 4px rgba(0,0,0,0.6),0 0 40px rgba(0,0,0,0.3) inset; */
 }
+/* .effect {
+
+	webkit-box-shadow:0px 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+	moz-box-shadow:0px 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+	o-box-shadow:0px 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+} */
+
 .jiaoshijianjietxt {
   font-size: 35rpx;
   height: 100rpx;

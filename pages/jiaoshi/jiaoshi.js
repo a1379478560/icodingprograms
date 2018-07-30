@@ -1,0 +1,90 @@
+// pages/jiaoshi/jiaoshi.js
+var utilData = require('../../utils/util.js')
+Page({
+
+  /**
+   * 页面的初始数据
+   */
+  data: {
+  
+  },
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+    var that = this;
+    var teachers = utilData.teacherIntroPic(options.id)
+    this.setData({
+      pic: teachers.pic,
+    })
+    // wx.setNavigationBarTitle({
+    //   title: that.data.caption//页面标题为路由参数
+    // })
+  },
+  phoneCall: function () {
+    wx.makePhoneCall({
+      phoneNumber: '18132047093',
+      success: function () {
+        console.log("拨打电话成功！")
+      },
+      fail: function () {
+        console.log("拨打电话失败！")
+      }
+    })
+  },
+  bindToYuyue: function () {
+    wx.navigateTo({
+      url: '../yuyueshiting/yuyueshiting'
+    })
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+  
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+  
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+  
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+  
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+  
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+  
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+  
+  }
+})

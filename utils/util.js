@@ -1,6 +1,8 @@
 module.exports = {
   formatTime: formatTime,
-  TxVideoData:TxVideoData
+  TxVideoData:TxVideoData,
+  teacherIntroPic: teacherIntroPic,
+  json2Form: json2Form
 }
 
 const formatTime = date => {
@@ -19,6 +21,13 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+function json2Form(json) {
+  var str = [];
+  for (var p in json) {
+    str.push(encodeURIComponent(p) + "=" + encodeURIComponent(json[p]));
+  }
+  return str.join("&");
+}
 
 function TxVideoData(id) {
   var arr = {
@@ -54,6 +63,20 @@ function TxVideoData(id) {
     }
   }
   return arr.videolist[id]
+}
+
+function teacherIntroPic(id) {
+  var arr = {
+    teachers: {
+      shi: {pic:"https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/shi_full.jpg" },
+      yan: {pic: "https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/yan_full.jpg"},
+      wang: { pic: "https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/wang_full.jpg" },
+      zheng: { pic: "https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/zheng_full.jpg" },
+      mao: { pic: "https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/mao_full.jpg" },
+      feng: { pic: "https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/feng_full.jpg" },
+  }
+  }
+  return arr.teachers[id]
 }
 
 

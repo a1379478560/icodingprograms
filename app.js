@@ -9,6 +9,21 @@ App({
     // 登录
     wx.login({
       success: res => {
+        if (res.code) {
+          //发起网络请求
+          wx.request({
+            url: 'https://wx.4k12stem.com/onLogin',
+            data: {
+              code: res.code
+            },
+            success: function (res) {
+              //console.log(res.data)
+              wx.setStorageSync('openId', res.data)
+            }
+          })
+        } else {
+          console.log('登录失败！' + res.errMsg)
+        }
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
       }
     })

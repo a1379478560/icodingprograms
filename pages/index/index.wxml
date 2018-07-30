@@ -44,7 +44,7 @@
       <image class='navicon_linshi' src='./icon/nv1.jpg' />
 
     </view>
-    <view class='navigateitem' bindtap="bindTomy">
+    <view class='navigateitem' bindtap="bindToYuyue">
       <image class='navicon_linshi' src='./icon/nv2.jpg' />
 
     </view>
@@ -73,43 +73,30 @@
   </view>
 <view class='scroll'>
   <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex; " >
-    <view class='jiaoshijianjie' >
+    <view class='jiaoshijianjie'  bindtap="bindToJiaoshi" id="shi" >
       <image class="jiaoshijianjieimg"  src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/石老师.jpg' />
       <text class="jiaoshijianjietxt">石老师</text>
     </view>
-    <!-- <view class='jiaoshijianjie' >
-      <image class="jiaoshijianjieimg"  src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/冀老师.jpg' />
-      <text class="jiaoshijianjietxt">冀老师</text>
-    </view> -->
-
-    <view class='jiaoshijianjie' >
-      <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/寒冰老师.jpg' />
+    <view class='jiaoshijianjie' bindtap="bindToJiaoshi" id="zheng" >
+      <image class="jiaoshijianjieimg " src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/寒冰老师.jpg' />
       <text class="jiaoshijianjietxt">郑老师</text>
     </view>
-    <view class='jiaoshijianjie' >
+    <view class='jiaoshijianjie'  bindtap="bindToJiaoshi" id="wang">
       <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/王老师.jpg' />
       <text class="jiaoshijianjietxt">王老师</text>
     </view>
-    <view class='jiaoshijianjie' >
+    <view class='jiaoshijianjie'  bindtap="bindToJiaoshi" id="feng">
       <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/冯老师.jpg' />
       <text class="jiaoshijianjietxt">冯老师</text>
     </view> 
-    <!-- <view class='jiaoshijianjie' >
-      <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/张老师.jpg' />
-      <text class="jiaoshijianjietxt">张老师</text>
-    </view> -->
-    <view class='jiaoshijianjie' >
+    <view class='jiaoshijianjie' bindtap="bindToJiaoshi" id="mao">
       <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/毛老师.jpg' />
       <text class="jiaoshijianjietxt">毛老师</text>
     </view>
-    <view class='jiaoshijianjie' >
+    <view class='jiaoshijianjie' bindtap="bindToJiaoshi" id="yan">
       <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/闫老师.jpg' />
       <text class="jiaoshijianjietxt">闫老师</text>
     </view>
-    <!-- <view class='jiaoshijianjie' >
-      <image class="jiaoshijianjieimg" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/马老师.jpg' />
-      <text class="jiaoshijianjietxt">马老师</text>
-    </view> -->
   </scroll-view>
 </view>
 
@@ -214,8 +201,14 @@
   
   <view class='zixun' bindtap='bindTozixun1'>
     <view class='zixuntxt'>
-      <text class='zixun_txt'>我们的教学特色：基于项目的教学（PBL）</text>
+      <view class='zixun_txt'>
+        <text >教学特色：基于项目的教学（PBL）</text>
+      </view>
+      <view class='zixun_txt2'>
+        <text >PBL：理解—计划—解决—检查—更新</text>
+      </view>
     </view>
+ 
     <view class='zixunimg'>
       <image class="zixun_image" mode="scaleToFill" src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/zixun1.jpg"></image>
     </view>
@@ -223,7 +216,12 @@
 
   <view class='zixun' bindtap='bindTozixun2'>
     <view class='zixuntxt'>
-      <text class='zixun_txt'>学员反馈：孩子眼中的编程</text>
+      <view class='zixun_txt'>
+        <text >学员反馈：孩子眼中的编程</text>
+      </view>
+      <view class='zixun_txt2'>
+        <text >编程是什么呢？就是我指挥着机器，给它一个指令，它就会按照我说的去做</text>
+      </view>
     </view>
     <view class='zixunimg'>
       <image class="zixun_image" mode="scaleToFill" src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/zixun2.jpg"></image>
@@ -232,7 +230,12 @@
 
   <view class='zixun' bindtap='bindTozixun3'>
     <view class='zixuntxt'>
-      <text class='zixun_txt'>课程报名：零基础班、智能硬件班、python班报名</text>
+      <view class='zixun_txt'>
+        <text >课程报名：零基础班、硬件班、python班报名</text>
+      </view>
+      <view class='zixun_txt2'>
+        <text >国际认证老师，完整的课程体系，小班教学、线上+线下结合</text>
+      </view>
     </view>
     <view class='zixunimg'>
       <image class="zixun_image" mode="scaleToFill" src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/zixun3.jpg"></image>

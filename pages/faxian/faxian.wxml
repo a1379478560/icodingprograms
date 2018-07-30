@@ -10,7 +10,7 @@
   <view class='zixun' bindtap='bindTozixun1'>
     <view class='zixuntxt'>
       <view class='zixun_txt'>
-        <text >我们的教学特色：基于项目的教学（PBL）</text>
+        <text >教学特色：基于项目的教学（PBL）</text>
       </view>
       <view class='zixun_txt2'>
         <text >PBL：理解—计划—解决—检查—更新</text>

@@ -17,6 +17,14 @@ Page({
     ]
   },
   //事件处理函数
+  bindToJiaoshi: function (event) {
+    wx.navigateTo({
+      url: '../jiaoshi/jiaoshi?id=' + event.currentTarget.id,
+      success: function () {
+        console.log(url)
+      },
+    })
+  },
   bindTokc: function() {
     wx.switchTab({
       url: '../kecheng/kecheng',
@@ -45,7 +53,7 @@ Page({
       }
     })
   },
-  bindTomy: function () {
+  bindToYuyue: function () {
     wx.navigateTo({
       url: '../yuyueshiting/yuyueshiting'
     })

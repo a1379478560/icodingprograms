@@ -15,7 +15,7 @@
   </view>
 
 <form bindsubmit="formSubmit" bindreset="formReset">
-<view class="line">
+<view  style=' margin-top: 20px;' class="line">
     <view class="txt">姓名</view>
     <input name="name"  maxlength="5" placeholder="输入您的姓名" />
 </view>
@@ -23,13 +23,13 @@
     <view class="txt">电话</view>
     <input name="tel" type="number" maxlength="11" placeholder="输入您的电话" />
 </view>
-<view class="line">
+<view style='border-bottom: 1px solid rgba(0, 0, 0, .1);' class="line">
     <view class="txt">年龄</view>
     <input name="age" type="number" maxlength="2" placeholder="您孩子的年龄" />
 </view>
   <view class="btn-area">
     <button formType="submit">提交</button>
-    <button formType="reset">清空</button>
+    <!-- <button formType="reset">清空</button> -->
   </view>
 </form>
 </view>

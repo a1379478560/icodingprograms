@@ -23,23 +23,31 @@
 }
 .line{
   align-content: center;
-  height: 80rpx;
+  height: 50rpx;
+  width: 100%;
   margin: 5rpx;
   border-top: 1px solid rgba(0, 0, 0, .1);
-  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  /* border-bottom: 1px solid rgba(0, 0, 0, .1); */
   padding: 20rpx;
-    margin-top: 20px;
+  padding-bottom: 20rpx;
+  margin-top: 0px;
   text-align: center;
-      display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
-
+.line .txt{
+  color:#ff6100;
+}
 .line input{
   text-align: right;
-  width: 300rpx;
+  width: 650rpx;
   float: right;
 }
 .btn-area{
   margin-top:100rpx; 
+}
+.btn-area button{
+  width: 90%;
+  background:#ff6100
 }
 

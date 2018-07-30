@@ -10,7 +10,8 @@
     "pages/faxian/zixun/zixun3",
     "pages/tx-video/tx-video",
     "pages/onlinecourse/onlinecourse",
-    "pages/yuyueshiting/yuyueshiting"
+    "pages/yuyueshiting/yuyueshiting",
+    "pages/jiaoshi/jiaoshi"
   ],
   "window": {
     "backgroundTextStyle": "black",

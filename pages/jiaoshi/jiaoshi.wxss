@@ -1,0 +1,40 @@
+/* pages/jiaoshi/jiaoshi.wxss */
+.teacher_pic{
+  margin-top: 20rpx;
+  height: 1080rpx;
+  width: 100%;
+}
+.bottom{
+  margin-top: 0rpx;
+  margin-bottom: 20rpx;
+  height: 100rpx;
+  width: 100%;
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 20rpx;
+}
+.bottom .left{
+  height: 100rpx;
+  width: 30%;
+}
+.bottom .right{
+  height: 100rpx;
+  width: 68%;
+}
+
+/* .top {
+  height: 280rpx;
+  width: 100%;
+  background: lightblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.top image{
+  height: 100%;
+  width: 100%;
+} */

@@ -1,0 +1,8 @@
+<!--pages/jiaoshi/jiaoshi.wxml-->
+<view class='container'>
+<image class='teacher_pic' src='{{pic}}' />
+<view class='bottom'>
+<image bindtap="phoneCall" src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/jiaoshi_left.jpg" class='left' />
+<image bindtap="bindToYuyue" src="https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/jiaoshi_right.jpg" class='right'/>
+</view>
+</view>
