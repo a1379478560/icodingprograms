@@ -24,23 +24,25 @@
 .line{
   align-content: center;
   height: 50rpx;
-  width: 100%;
+  width: 500rpx;
   margin: 5rpx;
   border-top: 1px solid rgba(0, 0, 0, .1);
   /* border-bottom: 1px solid rgba(0, 0, 0, .1); */
   padding: 20rpx;
   padding-bottom: 20rpx;
+  margin-left: 0rpx;
   margin-top: 0px;
   text-align: center;
   display: flex;
   flex-direction: row;
 }
 .line .txt{
+  width: 80rpx;
   color:#ff6100;
 }
 .line input{
   text-align: right;
-  width: 650rpx;
+  width: 400rpx;
   float: right;
 }
 .btn-area{

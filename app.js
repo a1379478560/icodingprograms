@@ -19,6 +19,7 @@ App({
             success: function (res) {
               //console.log(res.data)
               wx.setStorageSync('openId', res.data)
+              console.log(wx.getStorageSync('openId'))
             }
           })
         } else {
