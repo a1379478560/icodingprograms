@@ -1,8 +1,101 @@
 /* pages/my/my.wxss */
+/* 头像昵称 */
+.userinfo {
+  margin-top:60rpx; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+
+.intro {
+  margin: 30px;
+  text-align: center;
+}
+
 /**index.wxss**/
 .qr{
   margin-top: 40rpx;
   height: 980rpx;
   width: 90%;
 
+}
+.profilefram {
+  margin-top:10rpx; 
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.profile{
+  margin-top: 30rpx;
+  height: 300rpx;
+  width: 600rpx;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  padding-left: 70rpx;
+}
+.profile text{
+  height: 600rpx;
+  width: 95%;
+}
+
+.showLeaveOrsignin{
+  height: 60rpx;
+  width: 95%;
+}
+
+.lesson_note {
+  margin-top: 30rpx;
+  height: 200rpx;
+  width: 500rpx;
+}
+/* .lesson_note image{
+  height: 400rpx;
+  width: 500rpx;
+} */
+.lesson_note text{
+    height: 100rpx;
+  width: 300rpx;
+}
+
+.feedbacktxt{
+margin-top: 40rpx;
+width: 650rpx;
+}
+.line .txt{
+  height: 200rpx;
+  width: 400rpx;
+  color:#ff6100;
+}
+.line textarea{
+  
+  border-top: 1px solid rgba(0, 0, 0, .3);
+  border-left: 1px solid rgba(0, 0, 0, .3);
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+  border-right: 1px solid rgba(0, 0, 0, .3);
+  text-align: right;
+  width: 650rpx;
+  float: right;
+}
+.btn-area{
+  margin-top:40rpx; 
+  margin-bottom: 40rpx;
+}
+.btn-area button{
+  margin-top: 40rpx;
+  width: 100%;
+  background:#ff6100
 }

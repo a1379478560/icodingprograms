@@ -1,0 +1,12 @@
+<!--pages/myDir/bindstu/bindstu.wxml-->
+<view class='container'>
+<form bindsubmit="bindSubmit" >
+<view  style=' margin-top: 20px;' class="line">
+    <view class="txt">学号</view>
+    <input name="stuid"  maxlength="8" placeholder="输入您的学号" />
+</view>
+  <view class="btn-area">
+    <button formType="submit">提交</button>
+  </view>
+</form>
+</view>

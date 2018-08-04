@@ -11,7 +11,8 @@
     "pages/tx-video/tx-video",
     "pages/onlinecourse/onlinecourse",
     "pages/yuyueshiting/yuyueshiting",
-    "pages/jiaoshi/jiaoshi"
+    "pages/jiaoshi/jiaoshi",
+    "pages/myDir/bindstu/bindstu"
   ],
   "window": {
     "backgroundTextStyle": "black",

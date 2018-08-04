@@ -1,7 +1,86 @@
 <!--pages/my/my.wxml-->
 <!--index.wxml-->
 <view class="container">
-<text style='margin-top: 40rpx;'>开发中！敬请期待</text> 
-<image class="qr" src='https://lg-ow2dtydc-1257048177.cos.ap-shanghai.myqcloud.com/myqr.jpg' />   
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+  <view class='tuwenbiaoti'>
+    <view class='light-bg'></view> 
+    <view class='red-bg'></view> 
+    <text decode='{{true}}' class='tuwentxt'> &nbsp;&nbsp;&nbsp;学生信息</text> 
+  </view>
+
+  <view class='profilefram' >
+    <button wx:if="{{!hasStuInfo}}"  bindtap="bindTobindstu"> 绑定学号 </button>
+    <block wx:else>
+    <view class='profile'>
+      <text class="userinfo-nickname">姓名：{{stuName}}</text>
+      <text class="userinfo-nickname">学号：{{stuId}}</text>
+      <text class="userinfo-nickname">课程：{{Class}}</text>
+      <text class="userinfo-nickname">时间：{{LessonTime}}</text>
+    </view>
+    </block>
+  </view>
+
+<view class='tuwenbiaoti'>
+  <view class='light-bg'></view> 
+  <view class='red-bg'></view> 
+  <text decode='{{true}}' class='tuwentxt'> &nbsp;&nbsp;&nbsp;签到&请假</text> 
+</view>
+
+<view style='display: flex; flex-direction: row;' >
+  <button wx:if="{{!isLeave && !isSignin}}"  bindtap="bindTosignin"> 签到 </button>
+  <button wx:if="{{!isLeave && !isSignin}}"  bindtap="bindToLeave"> 请假 </button>
+
+  <button wx:if="{{isLeave || isSignin}}" disabled="{{true}}"  bindtap="bindTosignin"> 签到 </button>
+  <button wx:if="{{isLeave || isSignin}}" disabled="{{true}}" bindtap="bindToLeave"> 请假 </button>
+  <!-- <text style='width: 350rpx; ' decode='{{true}}' bindtap="bindTosignin"  style='margin-top: 40rpx;'>签到</text> 
+  <text style='width:350rpx;' bindtap="bindToLeave"  style='margin-top: 40rpx;'> 请假</text>  -->
+</view>
+<view>
+<text class="{{isSignin?'show':'hide'}}">已签到</text>
+<text class="{{isLeave?'show':'hide'}}">已请假</text>
+</view>
+
+
+<view class='tuwenbiaoti'>
+  <view class='light-bg'></view> 
+  <view class='red-bg'></view> 
+  <text decode='{{true}}' class='tuwentxt'> &nbsp;&nbsp;&nbsp;老师评价</text> 
+</view>
+<text>{{teacher_evaluation}}</text>
+
+<view class='tuwenbiaoti'>
+  <view class='light-bg'></view> 
+  <view class='red-bg'></view> 
+  <text decode='{{true}}' class='tuwentxt'> &nbsp;&nbsp;&nbsp;课程讲义</text> 
+</view>
+
+<view class='lesson_note'>
+<button   bindtap="bindToSeeLessonNote"> 查看讲义 </button>
+  <image src = "{{lessonNote[1]['note_pic']}}" ></image>
+</view>
+
+<view class='tuwenbiaoti'>
+  <view class='light-bg'></view> 
+  <view class='red-bg'></view> 
+  <text decode='{{true}}' class='tuwentxt'> &nbsp;&nbsp;&nbsp;家长反馈</text> 
+</view>
+
+<form bindsubmit="feedbackSubmit" bindreset="formReset">
+<view  style=' margin-top: 20px;' class="line">
+    <!-- <view class="feedbacktxt">反馈</view> -->
+    <textarea style='margin-bottom:30rpx;' name="feedback" auto-focus maxlength="200" placeholder="输入您要反馈的内容" />
+</view>
+  <view  class="btn-area">
+    <button formType="submit">提交</button>
+  </view>
+</form>
+
 </view>
 

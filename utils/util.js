@@ -2,8 +2,11 @@ module.exports = {
   formatTime: formatTime,
   TxVideoData:TxVideoData,
   teacherIntroPic: teacherIntroPic,
-  json2Form: json2Form
+  json2Form: json2Form,
+  str2json: str2json,
 }
+
+
 
 const formatTime = date => {
   const year = date.getFullYear()
@@ -27,6 +30,19 @@ function json2Form(json) {
     str.push(encodeURIComponent(p) + "=" + encodeURIComponent(json[p]));
   }
   return str.join("&");
+}
+
+function str2json(jsonStr){
+  jsonStr = jsonStr.replace(" ", "");
+  jsonStr = jsonStr.replace(/'/g, '"');
+  if (typeof jsonStr != 'object') {
+    jsonStr = jsonStr.replace(/\ufeff/g, "");//str转json
+    var res_json = JSON.parse(jsonStr);
+    return res_json;
+  }
+  else{
+    return jsonStr
+  }
 }
 
 function TxVideoData(id) {
