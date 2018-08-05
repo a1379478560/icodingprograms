@@ -200,8 +200,9 @@ Page({
     })
   },
   bindToSeeLessonNote:function(){   //查看讲义按钮
+    console.log(this.data.lessonNote)
     wx.downloadFile({
-      url: this.data.lessonNote[1]['note_pic'],
+      url: this.data.lessonNote[0]['note_pic'],
       success: function (res) {
         console.log(res.tempFilePath)
         var filePath = res.tempFilePath

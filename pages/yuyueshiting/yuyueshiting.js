@@ -81,13 +81,16 @@ Page({
       });
       data["ifsms"] = "1";
     }
+    data['openid'] = wx.getStorageSync('openId');
     if(that.judgeinput(e.detail.value)===0){
       return
     }
     wx.request({
-      url: 'https://wx.4k12stem.com/yuyue', 
+      // url: 'https://wx.4k12stem.com/yuyue', 
+      // data: util.json2Form(data),
+      url: 'https://wx.4k12stem.com/api/orderaudition/', 
+      data: data,
       method: 'post',
-      data: util.json2Form(data),
       header: {
         'content-type': 'application/x-www-form-urlencoded' 
       },

@@ -9,12 +9,17 @@ App({
     // 登录
     wx.login({
       success: res => {
+        console.log(res.code)
         if (res.code) {
           //发起网络请求
           wx.request({
-            url: 'https://wx.4k12stem.com/onLogin',
+            url: 'https://wx.4k12stem.com/api/onLogin/',
+            method: 'post',
             data: {
               code: res.code
+            },
+            header: {
+              'content-type': 'application/x-www-form-urlencoded'
             },
             success: function (res) {
               //console.log(res.data)
